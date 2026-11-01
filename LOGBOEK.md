@@ -5,6 +5,7 @@
 
 | Datum | Wie | Subteam | Wat | Waar |
 |---|---|---|---|---|
+| 2026-11-01 | JolanDijkmans (met Codex) | UX/UI | Landlicht-prototype als uitgangspunt bewaard (D008); lokale architectuur, cloudopties en livebeeld onderzocht. Geen hardwaretest | `t3-ux-ui/prototype/stijlverkenning/README.md`, `t3-ux-ui/analyse/dashboard-lokaal-of-cloud.md` |
 | 2026-10-19 | JolanDijkmans (met Claude Code) | docs | Team 7 en link naar de organisatie-repo vastgelegd | `BESLUITEN.md` (D007), `README.md` |
 | 2026-10-19 | JolanDijkmans (met Claude Code) | docs | Rollen en teaminfo van de docenten verwerkt, GitKraken als Git-programma | `_config/rollen.md`, `BESLUITEN.md` (D005, D006) |
 | 2026-10-19 | JolanDijkmans (met Claude Code) | docs | Mappen hernoemd naar T1/T2/T3, regel 13 (token-efficiënt, scripts), `ICM-KORT.md`, `scripts/check-verwijzingen.py`, eindcontrole | `CLAUDE.md`, `ICM-KORT.md`, `scripts/` |
