@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "bewering": "WCAG contrast ratio voor normale tekst op glasprijs/UI",
+    "waarde": "4.5:1",
+    "eenheid": "ratio",
+    "regio": "Wereldwijd",
+    "jaar": "2026",
+    "bronsoort": "officiële instantie",
+    "bron_titel": "What Is Glassmorphism? — updated 2026 | IxDF",
+    "bron_url": "https://ixdf.org/literature/topics/glassmorphism",
+    "zekerheid": "hoog"
+  },
+  {
+    "id": 2,
+    "bewering": "GitHub sterren voor open-source shadcn-ui-kit",
+    "waarde": "444",
+    "eenheid": "sterren",
+    "regio": "Wereldwijd",
+    "jaar": "2026",
+    "bronsoort": "bedrijf/webshop",
+    "bron_titel": "GitHub - bundui/shadcn-ui-kit: Shadcn UI Kit is a collection of admin dashboards",
+    "bron_url": "https://github.com/bundui/shadcn-ui-kit",
+    "zekerheid": "hoog"
+  },
+  {
+    "id": 3,
+    "bewering": "Aanbevolen CSS backdrop-filter blur bereik voor glass UI",
+    "waarde": "8 tot 24",
+    "eenheid": "px",
+    "regio": "Wereldwijd",
+    "jaar": "2026",
+    "bronsoort": "bedrijf/webshop",
+    "bron_titel": "Glassmorphism UI Design: Examples, Best Practices & Trends",
+    "bron_url": "https://www.designstudiouiux.com/blog/what-is-glassmorphism-ui-trend/",
+    "zekerheid": "middel"
+  }
+]

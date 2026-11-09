@@ -1,0 +1,113 @@
+{
+  "_readme": "Single source of truth for the materials tables. price_min/price_max in EUR incl. VAT for ONE unit; null = free/UA stock (supplier 'UA') or still to research. url set = researched on 2026-10-25 (materials-research.json); otherwise team estimate from 'benodigdheden concepten.txt'. Re-run build_deck.py after editing.",
+  "items": {
+    "cam": {
+      "name": "DFRobot ESP32-S3 AI-cameramodule (DFR1154)",
+      "purpose": "Beeldherkenning, IR-gevoelig, met micro en speaker. Eigen 5 V, I2C/UART naar BiBoard",
+      "price_min": 20.7,
+      "price_max": 20.7,
+      "pack_note": null,
+      "supplier": "DigiKey Belgium",
+      "url": "https://www.digikey.be/en/products/detail/dfrobot/DFR1154/27526978",
+      "image": null,
+      "image_url": "https://www.mouser.de/images/marketingid/2026/df/197676884.jpg",
+      "status": "researched 2026-10-25; team estimate was 30-40; weight not stated"
+    },
+    "tof": {
+      "name": "GERUI VL53L0X ToF-afstandssensor (6 stuks)",
+      "purpose": "Afstand tot 2 m (I2C). Pak van 6; XSHUT nodig voor eigen adressen",
+      "price_min": 12,
+      "price_max": 12,
+      "pack_note": null,
+      "supplier": null,
+      "url": null,
+      "image": null,
+      "image_url": null,
+      "status": "team estimate; GERUI listing not found by research"
+    },
+    "mag": {
+      "name": "Kuulaa USB-C magneetkabel, 3A",
+      "purpose": "Dockcontact: magnetische laadverbinding (5 V / 3 A)",
+      "price_min": 8,
+      "price_max": 8,
+      "pack_note": null,
+      "supplier": null,
+      "url": null,
+      "image": null,
+      "image_url": null,
+      "status": "team estimate; only found on US shops; fit on Bittle X not verified"
+    },
+    "qi": {
+      "name": "Qi-oplaadset 5 V / 1 A: ontvanger + zender (Kiwi Electronics)",
+      "purpose": "Ontvanger op de robot, zender in het dock (2–10 mm, losse printjes)",
+      "price_min": 9.43,
+      "price_max": 9.43,
+      "pack_note": null,
+      "supplier": "Kiwi Electronics",
+      "url": "https://www.kiwi-electronics.com/nl/wireless-charging-module-5v-1a-3078",
+      "image": null,
+      "image_url": null,
+      "status": "researched 2026-10-25; replaces the USB-C Qi receiver (12 EUR, not found in EU) and covers the missing transmitter"
+    },
+    "piezo": {
+      "name": "Piëzoschijf of buzzer",
+      "purpose": "Alarm- of afschrikgeluid (de camerakit heeft ook een speaker)",
+      "price_min": null,
+      "price_max": null,
+      "pack_note": null,
+      "supplier": "UA",
+      "url": null,
+      "image": null,
+      "image_url": null,
+      "status": "UA stock; not researched"
+    },
+    "mmwave": {
+      "name": "Hi-Link HLK-LD2410C 24 GHz-radarmodule",
+      "purpose": "Beweging achter dunne wanden, geen beeld. 0,75–6 m, UART",
+      "price_min": 5.25,
+      "price_max": 5.25,
+      "pack_note": null,
+      "supplier": "Tinytronics",
+      "url": "https://www.tinytronics.nl/nl/domotica/sensoren/beweging-en-aanwezigheid/hi-link-hlk-ld2410c-24ghz-radar-sensor-module-met-bluetooth",
+      "image": null,
+      "image_url": null,
+      "status": "researched 2026-10-25; through-wall behaviour only per vendor statements; final choice open"
+    },
+    "speaker": {
+      "name": "Degelijke kleine speaker",
+      "purpose": "Audioverhaal per kunstwerk (camerakit heeft een kleine speaker)",
+      "price_min": null,
+      "price_max": null,
+      "pack_note": null,
+      "supplier": "UA",
+      "url": null,
+      "image": null,
+      "image_url": null,
+      "status": "UA stock; model not chosen"
+    }
+  },
+  "concepts": {
+    "coop": [
+      "cam",
+      "tof",
+      "mag",
+      "qi",
+      "piezo"
+    ],
+    "museum": [
+      "cam",
+      "tof",
+      "mag",
+      "qi",
+      "speaker"
+    ],
+    "home": [
+      "cam",
+      "tof",
+      "mag",
+      "qi",
+      "piezo",
+      "mmwave"
+    ]
+  }
+}

@@ -1,0 +1,303 @@
+{
+  "format": "coop-scenario",
+  "version": 1,
+  "name": "Flat baseline (no bumps, no mud)",
+  "notes": "Reference run: level ground and no mud, to compare every other scenario against.",
+  "simulation": {
+    "physics_hz": 240,
+    "speed": 1
+  },
+  "terrain": {
+    "size": [
+      8.0,
+      8.0
+    ],
+    "resolution": 0.05,
+    "roughness": 0.0,
+    "feature_size": 0.5,
+    "seed": 7,
+    "friction": 0.8,
+    "flat_margin": 0.3
+  },
+  "mud": [],
+  "coop": {
+    "position": [
+      0.0,
+      0.0
+    ],
+    "yaw": 0.0,
+    "run_size": [
+      3.0,
+      2.0
+    ],
+    "fence_height": 0.6,
+    "post_spacing": 0.5,
+    "house_size": [
+      1.0,
+      0.8,
+      0.7
+    ]
+  },
+  "dock": {
+    "position": [
+      -1.0,
+      -1.75
+    ],
+    "yaw": -90.0,
+    "capture_distance": 0.03,
+    "capture_angle": 10.0,
+    "stop_distance": 0.12
+  },
+  "robot": {
+    "model": "/assets/bittle/bittle.urdf",
+    "forward_axis": "+y",
+    "start": {
+      "position": [
+        0.3,
+        -1.5
+      ],
+      "heading": 0.0
+    },
+    "payload": [
+      {
+        "id": "esp32-cam",
+        "name": "ESP32-S3 camera board",
+        "mass": 0.012,
+        "link": "base-frame-link"
+      },
+      {
+        "id": "tof-boards",
+        "name": "Two VL53L0X boards",
+        "mass": 0.004,
+        "link": "base-frame-link"
+      }
+    ],
+    "legs": {
+      "upper": 0.0492,
+      "lower": 0.055,
+      "splay": 0.0,
+      "fan": 0.0,
+      "front_offset": 0.0,
+      "rear_offset": 0.0,
+      "front_knees": "backward",
+      "rear_knees": "backward"
+    },
+    "servo": {
+      "torque": 0.29,
+      "speed": 350.0
+    },
+    "gait": {
+      "type": "crawl",
+      "hip_height": 0.07,
+      "stride": 0.03,
+      "step_height": 0.015,
+      "front_reach": 0.0,
+      "rear_reach": 0.0,
+      "cycle": 1.2
+    }
+  },
+  "stones": {
+    "count": 0,
+    "min_size": 0.02,
+    "max_size": 0.05,
+    "seed": 3,
+    "area": null
+  },
+  "sensors": [
+    {
+      "id": "head-cam",
+      "type": "camera",
+      "name": "Head camera (ESP32-S3)",
+      "link": "head-link",
+      "position": [
+        0.05,
+        0.0,
+        0.01
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fov": 60.0,
+      "width": 160,
+      "height": 120,
+      "range": 5.0,
+      "rate": 4.0
+    },
+    {
+      "id": "tof-left",
+      "type": "tof",
+      "name": "ToF left (VL53L0X)",
+      "link": "base-frame-link",
+      "position": [
+        0.0,
+        0.03,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -13.0,
+        90.0
+      ],
+      "range": 2.0,
+      "cone": 25.0,
+      "rays": 5,
+      "noise": 0.03,
+      "rate": 20.0
+    },
+    {
+      "id": "tof-front",
+      "type": "tof",
+      "name": "ToF front (VL53L0X)",
+      "link": "base-frame-link",
+      "position": [
+        0.06,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -13.0,
+        0.0
+      ],
+      "range": 2.0,
+      "cone": 25.0,
+      "rays": 5,
+      "noise": 0.03,
+      "rate": 20.0
+    },
+    {
+      "id": "imu",
+      "type": "imu",
+      "name": "Body IMU (MPU6050)",
+      "link": "base-frame-link",
+      "noise": 0.0,
+      "rate": 100.0
+    }
+  ],
+  "environment": {
+    "time_of_day": "day",
+    "moonlight": 0.05,
+    "ir_light": true,
+    "ir_range": 2.5
+  },
+  "chickens": {
+    "inside": 4,
+    "outside": 2,
+    "speed": 0.15,
+    "seed": 5
+  },
+  "visitors": [
+    {
+      "id": "fox",
+      "kind": "fox",
+      "name": "Fox",
+      "appear": 40.0,
+      "speed": 0.3,
+      "loop": true,
+      "flee_distance": 1.0,
+      "path": [
+        [
+          3.7,
+          3.2
+        ],
+        [
+          2.3,
+          1.6
+        ],
+        [
+          1.75,
+          0.6
+        ],
+        [
+          1.75,
+          -0.6
+        ],
+        [
+          1.0,
+          -1.25
+        ],
+        [
+          -1.0,
+          -1.25
+        ]
+      ]
+    },
+    {
+      "id": "farmer",
+      "kind": "person",
+      "name": "Farmer",
+      "appear": 120.0,
+      "speed": 0.9,
+      "loop": false,
+      "flee_distance": 0.0,
+      "path": [
+        [
+          -3.7,
+          2.6
+        ],
+        [
+          0.0,
+          2.4
+        ],
+        [
+          3.7,
+          2.6
+        ]
+      ]
+    }
+  ],
+  "patrol": {
+    "route": [
+      [
+        2.0,
+        -1.5
+      ],
+      [
+        2.0,
+        1.5
+      ],
+      [
+        -2.0,
+        1.5
+      ],
+      [
+        -2.0,
+        -1.5
+      ]
+    ],
+    "tolerance": 0.25,
+    "locomotion": "auto",
+    "obstacle_sensor": "tof-front",
+    "obstacle_distance": 0.12
+  },
+  "detector": {
+    "type": "ground-truth",
+    "camera": "head-cam",
+    "min_pixels": 20,
+    "min_brightness": 0.15,
+    "confirm": 2,
+    "external_topic": "detections/external",
+    "stale": 2.0
+  },
+  "behaviour": {
+    "laps_before_charging": 0,
+    "low_battery": 0.3,
+    "resume_battery": 0.9,
+    "deter_time": 10.0,
+    "chase_distance": 0.5,
+    "dock_attempts": 3,
+    "self_right": true
+  },
+  "energy": {
+    "battery_wh": 7.4,
+    "voltage": 7.4,
+    "base_power": 1.5,
+    "ir_power": 1.0,
+    "servo_idle_current": 0.01,
+    "servo_stall_current": 1.0,
+    "charge_power": 7.0,
+    "start_charge": 1.0
+  }
+}

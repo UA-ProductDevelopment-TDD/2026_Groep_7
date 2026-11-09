@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teamstructuur Groep 7</title>
+<style>
+  @page { size: A4 landscape; margin: 8mm; }
+  :root { --hw:#d9822b; --el:#2f74b5; --ux:#1f9488; --gr:#7a4fb5; --ink:#1d2430; --mut:#5b6573; --bg:#f6f4ef; --card:#fff; }
+  @media (prefers-color-scheme: dark) { :root { --ink:#e8ebf0; --mut:#a2abb8; --bg:#161a21; --card:#222833; } }
+  html, body { margin:0; background:var(--bg); color:var(--ink); font-family:system-ui,-apple-system,"Segoe UI",sans-serif; }
+  svg { display:block; width:100%; height:auto; max-width:1200px; margin:0 auto; }
+  text { fill:var(--ink); }
+  .mut { fill:var(--mut); }
+  .card { fill:var(--card); stroke-width:2.5; }
+  .h { font-weight:700; font-size:20px; }
+  .t { font-size:14px; }
+  .s { font-size:12px; }
+  .line { fill:none; stroke-width:2; stroke-dasharray:5 4; }
+  .body { fill:var(--card); stroke:var(--ink); stroke-width:3; }
+  .gr { fill:var(--gr); }
+</style>
+</head>
+<body>
+<svg viewBox="0 0 1120 790" role="img" aria-label="Bittle met drie zones: hardware, elektronica en UX/UI">
+  <text x="30" y="40" class="h" style="font-size:26px">Wie werkt waar? Teamstructuur Groep 7</text>
+  <text x="30" y="62" class="s mut">Concept: kippenhok-waakhond · Bittle X met BiBoard V1 · bron: concept-presentatie v5 en _config/rollen.md</text>
+
+  <!-- Bittle -->
+  <g>
+    <line x1="330" y1="472" x2="800" y2="472" stroke="var(--mut)" stroke-width="2"/>
+    <!-- poten -->
+    <g stroke="var(--ink)" stroke-width="7" stroke-linecap="round" fill="none">
+      <path d="M648 372 L662 422 L648 466"/><path d="M628 372 L612 422 L626 466"/>
+      <path d="M492 372 L506 422 L492 466"/><path d="M472 372 L456 422 L470 466"/>
+    </g>
+    <path d="M460 322 q-26 -22 -22 -46" stroke="var(--ink)" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <rect class="body" x="450" y="318" width="210" height="62" rx="18"/>
+    <circle class="body" cx="696" cy="322" r="30"/>
+    <path class="body" d="M680 296 l-6 -22 l18 12 z M714 296 l10 -20 l4 22 z"/>
+    <!-- elektronica in lijf -->
+    <rect x="490" y="332" width="110" height="34" rx="6" fill="none" stroke="var(--el)" stroke-width="2.5" stroke-dasharray="4 3"/>
+    <text x="545" y="354" text-anchor="middle" class="s" style="font-weight:600">BiBoard + batterij</text>
+    <!-- ToF -->
+    <g fill="var(--el)"><rect x="614" y="340" width="10" height="14" rx="2"/><rect x="448" y="340" width="10" height="14" rx="2"/></g>
+    <!-- camera -->
+    <circle cx="714" cy="322" r="9" fill="var(--el)"/>
+    <!-- dock -->
+    <rect x="352" y="440" width="64" height="32" rx="5" fill="var(--hw)" opacity=".85"/>
+    <text x="384" y="460" text-anchor="middle" class="s" style="fill:#fff;font-weight:700">dock</text>
+  </g>
+
+  <!-- UX-kaart (boven) -->
+  <rect class="card" x="330" y="90" width="470" height="150" rx="14" stroke="var(--ux)"/>
+  <text x="350" y="120" class="h" style="fill:var(--ux)">UX/UI · T3 · map t3-ux-ui/</text>
+  <text x="350" y="146" class="t">Dashboard: livebeeld, meldingen, patrouillezones</text>
+  <text x="350" y="166" class="t">Afschrikmodus en gevoeligheid instellen</text>
+  <text x="350" y="186" class="t">Handmatig ingrijpen en noodstop</text>
+  <text x="350" y="206" class="t">Uiterlijk en karakter van Bittle · stijlsysteem</text>
+  <text x="350" y="228" class="s mut">Branch: ux/… · eerst in testmodus, dan op de robot</text>
+  <path class="line" stroke="var(--ux)" d="M565 240 L565 300"/>
+  <text x="575" y="272" class="s mut">draadloze verbinding (BLE / WiFi)</text>
+
+  <!-- HW-kaart (links) -->
+  <rect class="card" x="30" y="120" width="290" height="270" rx="14" stroke="var(--hw)"/>
+  <text x="50" y="150" class="h" style="fill:var(--hw)">Hardware · T2 · t2-hw-sim/</text>
+  <text x="50" y="178" class="t">Poten en loopalgoritme op oneffen grond</text>
+  <text x="50" y="198" class="t">Voeten met grip op gras</text>
+  <text x="50" y="218" class="t">Houders voor camera, speaker en leds</text>
+  <text x="50" y="238" class="t">Dockingstation met laadcontacten</text>
+  <text x="50" y="258" class="t">Lasersnijden en 3D-printen</text>
+  <text x="50" y="278" class="t">Simulatie (digital twin)</text>
+  <text x="50" y="304" class="s mut">Structuur en beweging van de robot.</text>
+  <text x="50" y="324" class="s mut">Branch: hw/…</text>
+  <path class="line" stroke="var(--hw)" d="M200 390 L200 456 L350 456"/>
+  <path class="line" stroke="var(--hw)" d="M200 420 L452 440"/>
+
+  <!-- EL-kaart (rechts) -->
+  <rect class="card" x="810" y="120" width="280" height="270" rx="14" stroke="var(--el)"/>
+  <text x="830" y="150" class="h" style="fill:var(--el)">Elektronica · T1 · t1-elektronica/</text>
+  <text x="830" y="178" class="t">Camera ESP32-S3 + IR-licht</text>
+  <text x="830" y="198" class="t">ToF-afstandssensoren, lidar</text>
+  <text x="830" y="218" class="t">Alarm: buzzer of speaker, leds</text>
+  <text x="830" y="238" class="t">Laden: Qi + magneetkabel</text>
+  <text x="830" y="258" class="t">BiBoard, voeding, communicatie</text>
+  <text x="830" y="284" class="s mut">Sensoren, stroom en protocollen.</text>
+  <text x="830" y="304" class="s mut">Branch: el/…</text>
+  <path class="line" stroke="var(--el)" d="M810 340 L728 326"/>
+  <path class="line" stroke="var(--el)" d="M810 372 L624 352"/>
+
+  <!-- Grensvlak -->
+  <g>
+    <g class="gr"><path d="M714 346 l8 8 l-8 8 l-8 -8 z"/><path d="M619 362 l8 8 l-8 8 l-8 -8 z"/><path d="M416 424 l8 8 l-8 8 l-8 -8 z"/></g>
+  </g>
+  <rect x="30" y="520" width="1060" height="96" rx="12" fill="none" stroke="var(--gr)" stroke-width="2.5"/>
+  <path class="gr" d="M52 540 l10 10 l-10 10 l-10 -10 z"/>
+  <text x="74" y="556" class="h" style="fill:var(--gr);font-size:18px">Grensvlak: één lid van elk betrokken team beslist samen</text>
+  <text x="50" y="582" class="t"><tspan style="font-weight:600">Cameracover en -houder</tspan> (HW maakt, EL levert maten)  ·  <tspan style="font-weight:600">ToF-bevestiging</tspan> (HW plaatst, EL kiest sensor en adres)  ·  <tspan style="font-weight:600">Dock en laadcontacten</tspan> (HW bouwt, EL laadkring)</text>
+  <text x="50" y="602" class="t"><tspan style="font-weight:600">Dashboard-waarden</tspan> (UX toont, EL levert; afspraken in SYSTEEM.md, tabel "Afspraken tussen teams")</text>
+
+  <!-- Regels -->
+  <rect x="30" y="636" width="1060" height="118" rx="12" fill="var(--card)" stroke="var(--mut)" stroke-width="1.5"/>
+  <text x="50" y="664" class="h" style="font-size:18px">Samenwerken in GitHub</text>
+  <text x="50" y="688" class="t">1. Eén zone, één map, één branch (hw/…, el/…, ux/…). Niemand pusht op main; werk via een pull request.</text>
+  <text x="50" y="708" class="t">2. Raak je het werk van een ander team aan? Meld het in de pull request en laat dat team meekijken.</text>
+  <text x="50" y="728" class="t">3. Gedeelde afspraken (commando's, waarden, pinnen) staan in SYSTEEM.md, besluiten in BESLUITEN.md, robotsessies in LOGBOEK.md.</text>
+  <text x="50" y="746" class="s mut">Reviewer: iemand anders dan de indiener · GitHub-manager merget · robotvragen: Arno · Gemaakt met Claude Code (AI-hulp).</text>
+</svg>
+</body>
+</html>

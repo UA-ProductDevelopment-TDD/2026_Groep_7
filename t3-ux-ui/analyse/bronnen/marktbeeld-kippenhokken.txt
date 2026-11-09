@@ -1,0 +1,89 @@
+Samenvatting
+- Marktomvang: België telde 5.225.771 private huishoudens (2026, officiële meting), maar het aantal hobbykippenhouders en het gemiddelde aantal kippen per houder blijven ONBEKEND. Vlaanderen adviseert drie kippen voor een gemiddeld gezin; dit is geen gemeten gemiddelde. 
+  Statbel+1
+- Registratie: Particuliere hobbyhouders zonder voedselketenactiviteit moeten zich doorgaans pas vanaf 200 hobbyvogels in Sanitel registreren, met uitzonderingen voor onder meer marktdeelname. Registraties geven daardoor geen volledige telling van hobbyhouders. 
+  FAVV+1
+- Hokken en aanbieders: Aveve (BE) verkoopt onder meer Ferplast, Nestera, Glorenza en ChickenGuard. Geobserveerde prijzen lopen van €124,95 voor een automatische deur tot €1.099 voor een mobiel wagonhok (BE, webwinkelprijzen, geraadpleegd 2026). Omlet biedt daarnaast modulaire rennen en automatische deuren aan. 
+  https://www.aveve.be+2
+- Eierproductie: University of Minnesota Extension beschrijft ongeveer zes eieren per week bij goed leggende hennen en een daling tijdens de rui en bij kortere dagen. Een representatief Vlaams jaargemiddelde is ONBEKEND. 
+  UMN Extension
+- Marktaandeel, zelfbouw en betalingsbereidheid: ONBEKEND. Productprijzen mogen niet worden geïnterpreteerd als bewijs dat houders dit bedrag voor roofdierbescherming willen betalen. 
+  https://www.aveve.be
+- Bittle X: Een buitenpatrouille kan conceptueel aanvullend zijn op fysieke bescherming, maar bewezen afschrikking van vossen, nachtelijke bedrijfszekerheid en commerciële vraag in Vlaanderen zijn ONBEKEND.
+Bevindingen
+Peildatum: 31 oktober 2026. Prijzen zijn momentopnames, geen verkoopgemiddelden. ONBEKEND betekent dat geen voldoende onderbouwde waarde is gevonden. De kwalificatie 'eigen beoordeling' is geen onderzoeksresultaat.
+id	bewering	waarde	eenheid	regio	jaar	bronsoort	bron_titel	bron_url	zekerheid(hoog/middel/laag)
+B01	Private huishoudens; niet gelijk aan kippenhouders	5.225.771	huishoudens, meting	BE	2026	Officiële instantie	Statbel – Huishoudens	https://statbel.fgov.be/nl/themas/bevolking/structuur-van-de-bevolking/huishoudens	hoog
+B02	Huishoudens met hobbykippen	ONBEKEND	huishoudens	BE/VL	ONBEKEND	Officiële bronnen onderzocht	Statbel	https://statbel.fgov.be/	laag
+B03	Gemiddeld aantal kippen per hobbyhouder	ONBEKEND	kippen/houder	BE/VL	ONBEKEND	Officiële bronnen onderzocht	Huisdierwijzer kip	https://www.vlaanderen.be/huisdierinfo/huisdierwijzers/vogels/kip	laag
+B04	Aangeraden aantal kippen voor gemiddeld gezin; advies, geen meting	3	kippen/gezin	VL	ONBEKEND	Officiële instantie	Huisdierwijzer kip	https://www.vlaanderen.be/huisdierinfo/huisdierwijzers/vogels/kip	hoog
+B05	Registratiedrempel voor niet-commerciële hobbyvogels, behoudens uitzonderingen	200	vogels/houder	BE	2024	Officiële instantie	FAVV – Financieringsbrochure	https://favv-afsca.be/sites/default/files/Financement/brochure%202024%20NL%20-%20definitief_v2_190424.pdf	hoog
+B06	Buitenruimte aanbevolen per kip	2–5	m²/kip, advies	VL	2016	Officiële instantie	Huisdierwijzer kip	https://publicaties.vlaanderen.be/view-file/23310	hoog
+B07	Omheiningshoogte tegen vossen, minimumadvies	180	cm	VL	ONBEKEND	Natuurvereniging	Een veilig kippenhok	https://www.natuurpunt.be/sites/default/files/documents/publication/poster_veilig_kippenhok_vossen_natuurpunt_finaal.pdf	hoog
+B08	Geschikte maaswijdte tegen vos en marter	1,5 × 1,5	cm, advies	VL	ONBEKEND	Natuurvereniging	Een veilig kippenhok	https://www.natuurpunt.be/sites/default/files/documents/publication/poster_veilig_kippenhok_vossen_natuurpunt_finaal.pdf	hoog
+B09	Houten/verhoogd hok: concreet product	299,99	EUR/stuk, vraagprijs	BE	2026	Bedrijf/webshop	Aveve – Ferplast Hen House	https://www.aveve.be/nl/dier/kip/kippenhokken	hoog
+B10	Verhoogd houten hok, budgetsegment	128,99	EUR/stuk, vraagprijs	BE	2026	Bedrijf/webshop	bol – Kippenhok op poten	https://www.bol.com/be/nl/p/kippenhok-op-poten-verhoogd-legnest-beschermt-tegen-roofdieren-gemakkelijk-schoon-te-maken-oranje-geschikt-voor-kleine-kippengroepen/9300000378422217/	hoog
+B11	Hok met geïntegreerde buitenruimte: Glorenza Daisy	739	EUR/stuk, vraagprijs	BE	2026	Bedrijf/webshop	Aveve – Hokken en omheining	https://www.aveve.be/nl/dier/kip/kippenhokken	hoog
+B12	Modulair renstuk van Omlet, model Eglu Cube	270	EUR/stuk, vraagprijs	NL	2026	Bedrijf/webshop	Omlet – Kippenhok rennen	https://www.omlet.nl/shop/kippen_houden/Eglu_rennen/	hoog
+B13	Mobiel wagonhok Nestera	1.099	EUR/stuk, vraagprijs	BE	2026	Bedrijf/webshop	Aveve – Nestera wagon	https://www.aveve.be/nl/dier/kip/kippenhokken	hoog
+B14	Automatisch kippenpoortje Ferplast met zonnepaneel	124,95	EUR/stuk, vraagprijs	BE	2026	Bedrijf/webshop	Aveve – Hokken en omheining	https://www.aveve.be/nl/dier/kip/kippenhokken	hoog
+B15	Automatisch poortje ChickenGuard Pro	189,99	EUR/stuk, vraagprijs	BE	2026	Bedrijf/webshop	Aveve – Hokken en omheining	https://www.aveve.be/nl/dier/kip/kippenhokken	hoog
+B16	Verhoogd Nestera Penthouse-hok, maatmodel	103,8	cm lengte	BE	2026	Bedrijf/webshop	Aveve – Nestera	https://www.aveve.be/nl/dier/kip?product_brand=Nestera	hoog
+B17	Typisch houderijbreed hokformaat en verkoopmarktaandeel per type	ONBEKEND	m² en %	BE/VL	ONBEKEND	Geen representatieve meting gevonden	Aveve assortiment; geen marktstatistiek	https://www.aveve.be/nl/dier/kip/kippenhokken	laag
+B18	Eierproductie bij goed leggende hennen, voorlichtingsrichtwaarde	circa 6	eieren/kip/week	VS	2025	Universitaire voorlichting	Raising chickens for eggs	https://extension.umn.edu/agriculture/animals-and-livestock/poultry/raising-chickens-for-eggs	middel
+B19	Eierproductie per jaar voor gemiddelde Vlaamse hobbykip	ONBEKEND	eieren/kip/jaar	VL	ONBEKEND	Geen representatieve meting gevonden	Huisdierwijzer kip	https://www.vlaanderen.be/huisdierinfo/huisdierwijzers/vogels/kip	laag
+B20	Legproductie neemt af tijdens rui en kortere dagen	Herfst, afnemend daglicht	seizoen	VS, toepasbare biologische context	2025	Universitaire voorlichting	Raising chickens for eggs	https://extension.umn.edu/agriculture/animals-and-livestock/poultry/raising-chickens-for-eggs	hoog
+B21	Optimale dagelijkse lichtduur volgens voorlichting	circa 14	uur/dag, advies	VS	ONBEKEND	Universitaire voorlichting	Caring for chickens in cold weather	https://extension.umn.edu/agriculture/animals-and-livestock/poultry/caring-for-chickens-in-cold-weather	hoog
+B22	Exacte piek- en dalmaanden van hobby-eierproductie	ONBEKEND	kalendermaanden	BE/VL	ONBEKEND	Geen maandreeks gevonden	Raising chickens for eggs	https://extension.umn.edu/agriculture/animals-and-livestock/poultry/raising-chickens-for-eggs	laag
+B23	Percentage houders dat zelf bouwt	ONBEKEND	% houders	BE/VL	ONBEKEND	Geen enquête gevonden	Huisdierwijzer kip	https://www.vlaanderen.be/huisdierinfo/huisdierwijzers/vogels/kip	laag
+B24	Ervaring: vos doodt kippen bij defecte automatische sluiting	1	casus, zelfrapportage	Wereldwijd, locatie onbekend	2025	Forum/Reddit	What did the fox have for dinner today?	https://www.reddit.com/r/homestead/comments/1ijx6ji/what_did_the_fox_have_for_dinner_today/	laag
+B25	Ervaring: onopgemerkte automatische-deurstoring met sterfte	1	casus, zelfrapportage	VS/Florida	2026	Forum/Reddit	Auto door failed, 3 chickens died	https://www.reddit.com/r/BackYardChickens/comments/1w073wg/auto_door_failed_3_chickens_died/	laag
+B26	Gewenste maximale uitgave voor automatische deur, individuele reactie	100	USD, mening	Wereldwijd, locatie onbekend	2026	Forum/Reddit	Best automatic door	https://www.reddit.com/r/chickens/comments/1w8bdda/best_automatic_door_for_this_chicken_coop_and/	laag
+B27	Representatieve betalingsbereidheid voor bescherming	ONBEKEND	EUR/houder	BE/VL	ONBEKEND	Geen enquête gevonden	Aveve productaanbod, geen betalingsonderzoek	https://www.aveve.be/nl/dier/kip/kippenhokken	laag
+B28	Bittle X-batterijduur volgens fabrikant	1	uur/lading, specificatie	Wereldwijd	2026, geraadpleegd	Fabrikant	Petoi Bittle X Specifications	https://www.petoi.com/pages/bittle-x-robot-dog-with-arm-specifications	middel
+B29	Bittle X staande afmetingen	190 × 153 × 107	mm, specificatie	Wereldwijd	2026, geraadpleegd	Fabrikant	Petoi Bittle X Specifications	https://www.petoi.com/pages/bittle-x-robot-dog-with-arm-specifications	middel
+B30	Effectiviteit Bittle X tegen vossen	ONBEKEND	% afschrikking	BE/VL	ONBEKEND	Geen gecontroleerde studie gevonden	Petoi productspecificaties	https://www.petoi.com/pages/bittle-x-robot-dog-with-arm-specifications	laag
+
+Bronbeoordeling: Officiële instanties zijn het sterkst voor regelgeving en populatiecijfers. Peer-reviewed onderzoek zou passend zijn voor biologische effectiviteit, maar voor Bittle X-vossenafschrikking is geen peer-reviewed resultaat vastgesteld. Bedrijven zijn bruikbaar voor catalogusprijzen, niet voor marktaandelen of onafhankelijke werking. Forums/Reddit zijn het zwakst voor generaliseerbare conclusies.
+
+Tegenstrijdige aanbevelingen: Natuurpunt noemt schrikdraden een mogelijke omheiningsmaatregel; Aveve raadt een schrikdraad in zijn artikel over roofdieren af vanwege dierenstress. Beide standpunten blijven naast elkaar staan. 
+Natuurpunt+1
+
+Hoktypes
+Prijzen per aangeboden product of onderdeel, BE/NL, geraadpleegd 2026. Kwetsbaarheid en geschiktheid zijn kwalitatieve beoordelingen op basis van de genoemde constructie; geen gemeten aanvalskansen of uitgevoerde Bittle-tests.
+type	typische prijs	kwetsbaarheid voor vos/marter/rat	past een Bittle-ronde erbij?	bron	foto-URL
+Houten hok op poten	€128,99–€299,99; voorbeeldprijzen	Vos/marter: afhankelijk van deursluiting en kieren; rat: afhankelijk van openingen/voer	Buitenom mogelijk, terrein vereist test	bol, Aveve	Productpagina met foto
+Hok met aangebouwde ren	€739; Glorenza Daisy, voorbeeld	Vos/marter: vooral gaas, dak, onderrand; rat: kleine openingen	Mogelijk langs buitenzijde, ONBEKEND in praktijk	Aveve	Catalogusfoto
+Mobiel hok/kippentractor	€1.099; Nestera Wagon, voorbeeld	Verplaatsbare omtrek vraagt aandacht voor ondergraven; rat: ONBEKEND	Alleen bij geschikte vrije route; ONBEKEND	Aveve	Catalogusfoto
+Ren met ingegraven gaas	ONBEKEND	Minder risico op ondergraven bij correcte constructie; ratbescherming ONBEKEND	Ja, buiten de ren als pilotconcept	Natuurpunt	Geïllustreerde constructie
+Volledig overdekte ren	€270; Omlet Eglu Cube-renmodule, geen complete volièreprijs	Vos/marter: afhankelijk van dak, sluitingen, gaas en bodembeveiliging; rat: ONBEKEND	Buitenpatrouille mogelijk; voordeel boven fysiek gesloten ren ONBEKEND	Omlet, Natuurpunt	Renfoto's
+Hok met automatisch poortje	€124,95–€189,99; alleen deur/openers	Minder afhankelijk van handmatig sluiten; defecten blijven mogelijk	Ja, maar robot vervangt de deur niet	Aveve, Reddit-casus	Productfoto's
+
+De tabelprijzen zijn geen statistisch vastgestelde typische marktprijzen; een onderbouwde gemiddelde of mediaanprijs per hoktype is ONBEKEND.
+Afbeeldingen
+Een productfoto op een webshop is niet automatisch vrij herbruikbaar. De Natuurpunt-illustratie is geschikt als visuele referentie, maar de hergebruiktoestemming is niet vastgesteld.
+id	wat het toont	image_url	pagina_url	licentie
+I01	Vrij gelicentieerde foto van een kippenhok	Bestandspagina	https://commons.wikimedia.org/wiki/File:Chicken_coop.jpg	CC BY-SA 4.0; hergebruik toegestaan met naamsvermelding, licentielink en gelijk delen bij bewerking
+I02	Technische tekening vosbestendige ren en gaasconstructie	PDF-illustratie	https://www.natuurpunt.be/sites/default/files/documents/publication/poster_veilig_kippenhok_vossen_natuurpunt_finaal.pdf	ONBEKEND; toestemming nodig voor hergebruik buiten toepasselijke uitzonderingen
+I03	Houten hok op poten	Productpagina	https://www.bol.com/be/nl/p/kippenhok-op-poten-verhoogd-legnest-beschermt-tegen-roofdieren-gemakkelijk-schoon-te-maken-oranje-geschikt-voor-kleine-kippengroepen/9300000378422217/	ONBEKEND; geen vrije hergebruiklicentie vastgesteld
+I04	Nestera, Ferplast en Glorenza-hokken	Productcatalogus	https://www.aveve.be/nl/dier/kip/kippenhokken	ONBEKEND; geen vrije hergebruiklicentie vastgesteld
+I05	Modulaire metalen kippenrennen	Omlet-catalogus	https://www.omlet.nl/shop/kippen_houden/Eglu_rennen/	ONBEKEND; geen vrije hergebruiklicentie vastgesteld
+I06	Petoi Bittle X-robothond	Fabrikantpagina	https://www.petoi.com/pages/bittle-x-robot-dog-with-arm-specifications	ONBEKEND; geen vrije hergebruiklicentie vastgesteld
+
+Hiaten
+Onderwerp	Wat niet gevonden werd	Geprobeerde zoektermen
+Hobbyhouders	Representatief aantal Vlaamse/Belgische kippenhoudende gezinnen, gemiddelde groepsgrootte	Statbel hobbykippen gezinnen, Vlaanderen hobbykippen aantal, Sanitel hobbypluimvee registratie
+Hokmarktaandeel	Verdeling van verkochte of gebruikte hoktypes	kippenhok marktaandeel, Aveve kippenhokken, Nestera kippenren
+Afmetingen	Representatieve verdeling van werkelijke hobbyhokafmetingen	kippenhok afmetingen, Huisdierwijzer kip, Ferplast kippenhok
+Zelfbouw	Percentage houders met zelfgebouwde hokken	zelf kippenhok bouwen, DIY chicken coop, kippenhok enquête
+Eierproductie	Maandelijkse Belgische productiereeks per hobbykip; precieze piek- en dalmaanden	chickens daylight egg production, eggs per hen year, winter egg laying
+Problemen	Representatieve Vlaamse rangorde van problemen, inclusief prevalenties van vos, marter, rat, parasieten en onderhoud	kippenforum vos, Reddit automatic coop door, fox predator chicken coop
+Betalingsbereidheid	Vlaamse betalingsbereidheid voor een robot, bewaking of roofdierafschrikking	chicken coop predator protection price, automatic chicken door budget, kippen beschermen kosten
+Bittle X	Onafhankelijke proeven, IP-beschermingsklasse voor buitengebruik, aantoonbare vossenafschrikking	Petoi Bittle X outdoor, Bittle X specifications, robot dog fox deterrent
+
+Korte kwalitatieve gebruikersreactie, niet representatief, over een automatische deur:
+“A failure in the automatic closing of the door.”
+
+Bron: Reddit r/homestead, 7 februari 2025. Dit betreft een individuele zelfrapportage en bevestigt geen storingsfrequentie.
+
+Voor het UAntwerpen-project zijn vooral een Belgische houderenquête en een gecontroleerde praktijktest nodig om de ontbrekende marktomvang, betalingsbereidheid en effectiviteit van de Bittle X vast te stellen. Dit is een onderzoeksvoorstel, geen vastgestelde marktuitkomst.
