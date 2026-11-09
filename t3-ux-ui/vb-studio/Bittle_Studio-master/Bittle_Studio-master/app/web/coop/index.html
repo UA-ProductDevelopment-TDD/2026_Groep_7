@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coop Guard · Bittle simulator</title>
+<link rel="icon" type="image/svg+xml" href="/web/icon.svg">
+<link rel="stylesheet" href="/web/coop/coop.css">
+<script type="importmap">{"imports":{"three":"/vendor/build/three.module.js","three/addons/":"/vendor/examples/jsm/"}}</script>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="brand-mark" aria-hidden="true">cg</span><span>Coop Guard<small>BITTLE SIMULATOR</small></span></div>
+  <label class="scenario-name">Scenario name <input id="scenarioName" maxlength="80" autocomplete="off" title="The name is applied together with the scenario, with any Apply button"></label>
+  <details class="menu" id="scenarioMenu">
+    <summary>Scenarios</summary>
+    <div class="menu-pop">
+      <h3>Saved scenarios</h3>
+      <ul id="scenarioList" class="menu-list"></ul>
+      <div class="save-row">
+        <label>Save the applied scenario as <input id="saveName" maxlength="60" placeholder="letters, digits, spaces, - and _" autocomplete="off"></label>
+        <button type="button" id="saveButton">Save</button>
+      </div>
+      <div class="menu-actions">
+        <button type="button" id="newButton">New (defaults)</button>
+        <button type="button" id="downloadButton">Download JSON</button>
+        <button type="button" id="openButton">Open JSON file…</button>
+      </div>
+      <input type="file" id="openFile" accept=".json,application/json" hidden aria-label="Scenario JSON file">
+    </div>
+  </details>
+  <div class="run-controls">
+    <button type="button" id="runButton" class="run">▶ Run</button>
+    <button type="button" id="resetButton">↺ Reset</button>
+    <button type="button" id="missionButton" class="mission">▶ Mission</button>
+    <label>Speed <select id="speedSelect"></select></label>
+  </div>
+  <div class="status">
+    <span>Sim <b id="statusTime">0.00 s</b></span>
+    <span id="statusSpeed">–</span>
+    <span id="statusConnection" class="connection">Connecting…</span>
+  </div>
+</header>
+
+<main class="layout">
+  <aside class="panel" id="scenePanel" aria-label="Scene settings"></aside>
+
+  <section class="centre" aria-label="3D view">
+    <div class="viewbar">
+      <fieldset class="overlays">
+        <legend class="sr-only">Overlays</legend>
+        <label><input type="checkbox" data-overlay="rays" checked> ToF rays</label>
+        <label><input type="checkbox" data-overlay="camera" checked> Camera view</label>
+        <label><input type="checkbox" data-overlay="heading" checked> Heading arrow</label>
+        <label><input type="checkbox" data-overlay="start" checked> Start position</label>
+        <label><input type="checkbox" data-overlay="route" checked> Patrol route</label>
+        <label><input type="checkbox" data-overlay="actors" checked> Animals</label>
+        <label><input type="checkbox" data-overlay="paths" checked> Visitor paths</label>
+        <label><input type="checkbox" data-overlay="coverage" checked> Coverage</label>
+        <label><input type="checkbox" data-overlay="dock" checked> Dock zone</label>
+        <label><input type="checkbox" id="shadowsBox" checked> Shadows</label>
+      </fieldset>
+      <div class="view-buttons">
+        <button type="button" id="followButton" aria-pressed="false">Follow robot</button>
+        <button type="button" id="topButton">Top</button>
+        <button type="button" id="resetViewButton">Reset view</button>
+      </div>
+    </div>
+    <div id="viewport">
+      <div id="viewportOverlay" class="viewport-overlay" role="status">Loading Bittle model…</div>
+      <div class="hud" aria-label="Robot readout">
+        <span>Heading <b id="hudHeading">–</b></span>
+        <span>Speed <b id="hudSpeed">–</b></span>
+        <span>Roll / pitch <b id="hudTilt">–</b></span>
+        <span>Skill <b id="hudSkill">–</b></span>
+        <span>Battery <b id="hudBattery">–</b><span class="bar" id="hudBatteryBar" aria-hidden="true"><i id="hudBatteryFill"></i></span></span>
+        <span>Mission <b id="hudMode">–</b></span>
+        <span id="hudFallen" class="fallen" hidden>FALLEN</span>
+        <span id="hudAlarm" class="alarm" role="alert" hidden>ALARM</span>
+      </div>
+      <p class="view-hint">Drag to orbit · right-drag to pan · scroll to zoom</p>
+    </div>
+    <details class="log" open>
+      <summary>Event log <span id="logCount"></span></summary>
+      <ol id="logList"></ol>
+    </details>
+  </section>
+
+  <aside class="panel" aria-label="Mission, robot, sensors, experiments and hub">
+    <div class="tabs" role="tablist" id="tabList" aria-label="Panels">
+      <button type="button" role="tab" id="tab-mission" data-tab="mission" aria-controls="panel-mission" aria-selected="true">Mission</button>
+      <button type="button" role="tab" id="tab-robot" data-tab="robot" aria-controls="panel-robot" aria-selected="false" tabindex="-1">Robot</button>
+      <button type="button" role="tab" id="tab-sensors" data-tab="sensors" aria-controls="panel-sensors" aria-selected="false" tabindex="-1">Sensors</button>
+      <button type="button" role="tab" id="tab-experiments" data-tab="experiments" aria-controls="panel-experiments" aria-selected="false" tabindex="-1">Experiments</button>
+      <button type="button" role="tab" id="tab-hub" data-tab="hub" aria-controls="panel-hub" aria-selected="false" tabindex="-1">Hub</button>
+    </div>
+    <div role="tabpanel" id="panel-mission" data-tab="mission" aria-labelledby="tab-mission"></div>
+    <div role="tabpanel" id="panel-robot" data-tab="robot" aria-labelledby="tab-robot" hidden></div>
+    <div role="tabpanel" id="panel-sensors" data-tab="sensors" aria-labelledby="tab-sensors" hidden></div>
+    <div role="tabpanel" id="panel-experiments" data-tab="experiments" aria-labelledby="tab-experiments" hidden></div>
+    <div role="tabpanel" id="panel-hub" data-tab="hub" aria-labelledby="tab-hub" hidden></div>
+  </aside>
+</main>
+
+<div id="toast" role="status" aria-live="polite"></div>
+<script type="module" src="/web/coop/coop.js"></script>
+</body>
+</html>

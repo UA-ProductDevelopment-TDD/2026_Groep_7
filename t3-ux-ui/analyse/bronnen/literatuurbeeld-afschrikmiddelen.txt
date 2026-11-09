@@ -1,0 +1,82 @@
+Breed literatuurbeeld van afschrikmiddelen tegen rode vos bij pluimvee
+De literatuur levert geen enkelvoudig "beste" middel: de sterkste evidentie bestaat voor fysieke barrières en beschermdieren, terwijl licht-, geur- en geluidsafschrikkers zwak tot tegenstrijdig onderbouwd zijn. Voor een mobiele robot met camera, speaker en led is de meest beloftevolle richting beweging + adaptiviteit, niet een vaste flits of toon.
+
+Samenvatting
+Fysieke bescherming (omheining, nachthok) verlaagt vossenschade het duidelijkst; vossenbeheer zelf niet 
+Pépin
+2025
+Moreira-Arce
+2018
+.
+Beschermhonden (LGD) werken in veel settings, maar band met mensen kan hen weghalen bij het vee 
+McKellar
+2023
+Yusti-Muñoz
+2026
+.
+Licht is geen betrouwbare afschrikker: commerciële Foxlights verhoogden vosactiviteit met 12% 
+Hall
+2021
+; bewegingsgestuurde spots gaven geen voordeel 
+Hall
+2021
+.
+Beweging en adaptiviteit verdubbelden tot exponentieel verlengden de overlevingstijd van lokaas bij coyotes 
+Breck
+2023
+.
+Geur (LGD-lichaamsgeur) verlaagde vossenaanwezigheid in struikgewas, maar habitatafhankelijk 
+Ugarte
+2024
+.
+Gewenning is de kernbeperking van passieve middelen; variatie en roofdierachtige robots lijken gewenning te vertragen 
+Storms
+2022
+Hajder
+2025
+.
+Evidentieniveau is overwegend laag: reviews vinden weinig case-control studies 
+Eklund
+2017
+Moreira-Arce
+2018
+.
+Bevindingen
+id	bewering	waarde	eenheid	regio	jaar	bronsoort	bron_titel	bron_url	zekerheid
+B1	Omheining boven/onder verlaagt vossenpredatie significant	significante reductie	effect	Frankrijk (Jura)	2025	peer-reviewed	Investigating the effects of red fox management on poultry	https://doi.org/10.1038/s41598-025-xxxxx	hoog
+B2	ESOD-vossenbeheer verlaagde vossenpopulatie/schade niet	geen significant verschil	effect	Frankrijk	2025	peer-reviewed	idem	idem	hoog
+B3	Foxlights verhoogden vosactiviteit bij kraamhokken	+12	%	Australië	2021	peer-reviewed	In the spotlight	https://doi.org/10.1016/j.applanim.2021.105400	middel
+B4	Bewegingsgestuurde spots: geen voordeel vs. onverlicht	−5	%	Australië	2021	peer-reviewed	idem	idem	middel
+B5	Voortbeweging verdubbelde effect van lichtafschrikker	~2×	factor	VS (captive coyotes)	2023	peer-reviewed	Integrating robotics into wildlife conservation	https://doi.org/10.7717/peerj.15461	middel
+B6	Adaptieve beweging verlengde overlevingstijd exponentieel	exponentieel	effect	VS	2023	peer-reviewed	idem	idem	middel
+B7	LGD's: minder vossenactiviteit met honden + spots	p=0.048	p-waarde	Australië	2023	peer-reviewed	Chicken's best friend?	https://doi.org/10.1093/tas/txad0xx	middel
+B8	LGD's verlaagden vossenpredatie op schapen	χ²=4.90, p=0.026	statistiek	Chili	2026	peer-reviewed	LGD create safer landscapes	https://doi.org/10.1038/s41598-026-xxxxx	middel
+B9	LGD-lichaamsgeur verlaagde vossenaanwezigheid in struikgewas	effect (habitat-afhankelijk)	effect	Chili (Patagonië)	2024	peer-reviewed	Olfactory repellents as perceptual traps	https://doi.org/10.1016/j.pecon.2024.xx	laag
+B10	RobotFalcon: geen gewenning gedurende veldwerk	geen gewenning	observatie	Nederland	2022	peer-reviewed	Deterrence of birds with RobotFalcon	https://doi.org/10.1098/rsif.2022.0451	middel
+B11	RobotFalcon: 94% minder terugkerende meeuwen	−94	%	Italië	2025	peer-reviewed	Exposure to a raptor-like robot	https://doi.org/10.1002/2688-8319.70078	middel
+B12	Slechts 3.7% van studies had case-control design	3.7	%	mondiaal	2017	peer-reviewed review	Limited evidence on interventions	https://doi.org/10.1038/s41598-017-01774-5	hoog
+B13	Effectiviteit vaak op producentenperceptie gebaseerd	70	%	mondiaal	2018	peer-reviewed review	Management Tools to Reduce Carnivore-Livestock Conflicts	https://doi.org/10.1016/j.rama.2018.03.001	hoog
+B14	Alleen LGD en fladry haalden randomisatie + preventief effect	2	methoden	N-Amerika/Europa	2016	peer-reviewed	Predator control should not be a shot in the dark	https://doi.org/10.1002/fee.1312	hoog
+B15	LGD's kosten-effectief bij hoge protectiegraad	kosten > baten (US$13.413)	USD	VS	2020	peer-reviewed	Cost Effectiveness of LGD	https://doi.org/10.1002/wsb.1064	middel
+B16	65.7% van Australische producenten: predatie stopte met LGD	65.7	%	Australië	2012	peer-reviewed	Good dog!	https://doi.org/10.1071/WR11166	middel
+B17	Effectiviteit LGD bleef stabiel over ~8.9 jaar	stabiel	observatie	Australië	2023	peer-reviewed	Still a good dog!	https://doi.org/10.1071/WR22112	middel
+B18	LGD's verlaagden veeverlies significant in Mongolië	Z=−3.329, p=.001	statistiek	Mongolië	2021	peer-reviewed	Impact of LGD in rural Mongolia	https://doi.org/10.1111/csp2.497	middel
+B19	Multi-sensor edge-AI systeem elimineerde schade (ree)	near-total	effect	Europa	2025	peer-reviewed	AI-Based Multi-Sensor System	https://doi.org/10.3390/s2519xxxx	laag
+B20	Stakeholders verkiezen niet-letale middelen (omheining, compensatie)	hoogste acceptatie	mening	Griekenland	2020	peer-reviewed survey	Stakeholder preferences red foxes	https://doi.org/10.1186/s13717-020-00230-z	middel
+B21	Vossenschade niet gelinkt aan vossendichtheid of habitat	geen associatie	effect	VK	2004	peer-reviewed	Mortality due to fox predation	https://doi.org/10.1136/vr.155.2.49	middel
+B22	48.3% van schade toe te schrijven aan (vermoedelijke) vos	48.3	%	Frankrijk	2025	peer-reviewed	Investigating the effects	idem	middel
+B23	Case-study aanpak nodig wegens contextvariatie LGD	kwalitatief	methode	VS	2021	peer-reviewed	The case for case studies	https://doi.org/10.51492/cfwj.107.11	laag
+B24	Robot-locust: biomimetisch silhouet versnelt schrikrespons	significant	effect	Italië	2024	peer-reviewed	Robot-Locust Social Information Transfer	https://doi.org/10.1007/s12369-023-01096-9	laag
+Afbeeldingen
+id	wat het toont	image_url	pagina_url	licentie
+A1	RobotFalcon in veld	ONBEKEND	https://royalsocietypublishing.org/doi/10.1098/rsif.2022.0451	ONBEKEND
+A2	Foxlights bij kraamhok	ONBEKEND	https://doi.org/10.1016/j.applanim.2021.105400	ONBEKEND
+A3	LGD bij kippen	ONBEKEND	https://doi.org/10.1093/tas/txad0xx	ONBEKEND
+Geen directe afbeeldings-URL's met licentie gevonden in de aangeleverde teksten; alle als ONBEKEND gemarkeerd.
+
+Hiaten
+Geen Vlaamse/Belgische studies gevonden over vossenafschrikking bij kippenhokken; gezocht: "red fox deterrent livestock", "fox habituation deterrent", "predator deterrent poultry", "fladry fox", "motion-activated deterrent fox", "Vlaanderen vos kippen".
+Geen kwantitatieve gewenningsdata (aantal dagen/nachten tot falen) in de papers; enkel kwalitatieve observaties (RobotFalcon geen gewenning; Foxlights attractief).
+Geen ultrasoon/geluid-specifieke studies voor vossen; enkel vogel-distress calls als conventionele methode.
+Geen studies over led-kleur (rood/wit/UV) bij vossen.
+Geen drone-specifieke vossenstudies; enkel RobotFalcon (vogels) en robotvoertuig (coyotes).

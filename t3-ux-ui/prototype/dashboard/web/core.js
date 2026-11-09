@@ -1,0 +1,347 @@
+(function(root) {
+  'use strict';
+  const TYPES = {
+    coop: {
+      name: 'Kippenhok',
+      w: 140,
+      h: 100,
+      solid: true
+    },
+    nest: {
+      name: 'Legnest',
+      w: 44,
+      h: 32,
+      solid: true
+    },
+    water: {
+      name: 'Drinkbak',
+      w: 40,
+      h: 40,
+      solid: true
+    },
+    plant: {
+      name: 'Plant',
+      w: 65,
+      h: 65,
+      solid: true
+    },
+    door: {
+      name: 'Deur',
+      w: 52,
+      h: 12,
+      solid: false
+    },
+    fence: {
+      name: 'Omheining',
+      w: 130,
+      h: 12,
+      solid: true
+    },
+    dock: {
+      name: 'Dock',
+      w: 50,
+      h: 38,
+      solid: false
+    }
+  };
+  const clone = x => JSON.parse(JSON.stringify(x));
+
+  function initial() {
+    return {
+      version: 1,
+      objects: [{
+        id: 'coop',
+        type: 'coop',
+        name: 'Kippenhok',
+        x: 510,
+        y: 290,
+        w: 150,
+        h: 105,
+        rotation: 0
+      }, {
+        id: 'nest',
+        type: 'nest',
+        name: 'Legnest',
+        x: 403,
+        y: 305,
+        w: 40,
+        h: 35,
+        rotation: 0
+      }, {
+        id: 'water',
+        type: 'water',
+        name: 'Drinkbak',
+        x: 630,
+        y: 360,
+        w: 40,
+        h: 40,
+        rotation: 0
+      }, {
+        id: 'door',
+        type: 'door',
+        name: 'Hokdeur',
+        x: 510,
+        y: 350,
+        w: 52,
+        h: 12,
+        rotation: 0
+      }, {
+        id: 'dock',
+        type: 'dock',
+        name: 'Dock',
+        x: 170,
+        y: 475,
+        w: 54,
+        h: 42,
+        rotation: 0
+      }, {
+        id: 'plant1',
+        type: 'plant',
+        name: 'Appelboom',
+        x: 190,
+        y: 150,
+        w: 100,
+        h: 100,
+        rotation: 0
+      }, {
+        id: 'plant2',
+        type: 'plant',
+        name: 'Hortensia',
+        x: 780,
+        y: 430,
+        w: 75,
+        h: 75,
+        rotation: 20
+      }, {
+        id: 'plant3',
+        type: 'plant',
+        name: 'Kruiden',
+        x: 770,
+        y: 160,
+        w: 65,
+        h: 65,
+        rotation: 0
+      }, {
+        id: 'fence1',
+        type: 'fence',
+        name: 'Omheining',
+        x: 510,
+        y: 160,
+        w: 270,
+        h: 10,
+        rotation: 0
+      }],
+      routes: [{
+        id: 'round',
+        name: 'Rond het hok',
+        closed: true,
+        points: [{
+          x: 320,
+          y: 220
+        }, {
+          x: 350,
+          y: 125
+        }, {
+          x: 670,
+          y: 125
+        }, {
+          x: 710,
+          y: 245
+        }, {
+          x: 710,
+          y: 440
+        }, {
+          x: 460,
+          y: 470
+        }, {
+          x: 300,
+          y: 420
+        }]
+      }],
+      zones: [],
+      eggs: 3,
+      eggTime: Date.now() - 18 * 60000,
+      doorTime: Date.now() - 3 * 60000,
+      events: [{
+        label: 'Hokdeur gesloten',
+        detail: 'Deursensor',
+        time: Date.now() - 3 * 60000
+      }, {
+        label: 'Eieren bijgewerkt',
+        detail: '3 eieren · handmatig',
+        time: Date.now() - 18 * 60000
+      }]
+    };
+  }
+
+  function validate(v) {
+    if (!v || v.version !== 1 || !Array.isArray(v.objects) || !Array.isArray(v.routes) || !Array.isArray(v.zones)) throw Error('Geen geldige Bittle-kaart.');
+    if (v.objects.length > 120 || v.routes.length > 30 || v.zones.length > 30) throw Error('Deze kaart bevat te veel onderdelen.');
+    const point = p => p && Number.isFinite(p.x) && Number.isFinite(p.y) && p.x >= 30 && p.x <= 930 && p.y >= 30 && p.y <= 570;
+    const ids = new Set();
+    for (const o of v.objects) {
+      if (!TYPES[o.type] || !point(o) || !Number.isFinite(o.w) || !Number.isFinite(o.h) || o.w < 10 || o.h < 8 || o.w > 400 || o.h > 300 || !Number.isFinite(o.rotation) || typeof o.id !== 'string' || ids.has(o.id) || typeof o.name !== 'string' || o.name.length > 60) throw Error('Ongeldig terreinobject.');
+      ids.add(o.id);
+    }
+    for (const r of [...v.routes, ...v.zones]) {
+      if (typeof r.id !== 'string' || ids.has(r.id) || typeof r.name !== 'string' || r.name.length > 60 || !Array.isArray(r.points) || r.points.length < 2 || r.points.length > 150 || !r.points.every(point)) throw Error('Ongeldige route of zone.');
+      ids.add(r.id);
+    }
+    if (v.zones.some(z => z.points.length < 3)) throw Error('Een zone heeft minstens drie punten nodig.');
+    if (!Number.isInteger(v.eggs) || v.eggs < 0 || v.eggs > 24) throw Error('Ongeldig aantal eieren.');
+    return clone(v);
+  }
+
+  function inside(p, points) {
+    let yes = false;
+    for (let i = 0, j = points.length - 1; i < points.length; j = i++) {
+      const a = points[i],
+        b = points[j];
+      if (((a.y > p.y) !== (b.y > p.y)) && (p.x < (b.x - a.x) * (p.y - a.y) / (b.y - a.y) + a.x)) yes = !yes;
+    }
+    return yes;
+  }
+
+  function blocked(p, data, pad = 12) {
+    if (p.x < 48 || p.x > 912 || p.y < 48 || p.y > 552) return true;
+    for (const o of data.objects) {
+      if (!TYPES[o.type].solid) continue;
+      const a = -o.rotation * Math.PI / 180,
+        dx = p.x - o.x,
+        dy = p.y - o.y,
+        x = dx * Math.cos(a) - dy * Math.sin(a),
+        y = dx * Math.sin(a) + dy * Math.cos(a);
+      if (Math.abs(x) < o.w / 2 + pad && Math.abs(y) < o.h / 2 + pad) return true;
+    }
+    return data.zones.some(z => inside(p, z.points));
+  }
+
+  function clear(a, b, d) {
+    const n = Math.ceil(Math.hypot(b.x - a.x, b.y - a.y) / 5);
+    for (let i = 0; i <= n; i++) {
+      const t = n ? i / n : 0;
+      if (blocked({
+          x: a.x + (b.x - a.x) * t,
+          y: a.y + (b.y - a.y) * t
+        }, d)) return false;
+    }
+    return true;
+  }
+
+  function plan(a, b, d) {
+    if (blocked(a, d) || blocked(b, d)) return null;
+    if (clear(a, b, d)) return [clone(b)];
+    const step = 15,
+      cols = 65,
+      rows = 41;
+    const cell = p => ({
+        x: Math.round(p.x / step),
+        y: Math.round(p.y / step)
+      }),
+      start = cell(a),
+      goal = cell(b),
+      key = p => p.y * cols + p.x;
+    const open = [start],
+      cost = new Map([
+        [key(start), 0]
+      ]),
+      prev = new Map(),
+      closed = new Set();
+    let found = null;
+    for (let k = 0; open.length && k < 4000; k++) {
+      open.sort((u, v) => (cost.get(key(u)) + Math.hypot(u.x - goal.x, u.y - goal.y)) - (cost.get(key(v)) + Math.hypot(v.x - goal.x, v.y - goal.y)));
+      const u = open.shift(),
+        uk = key(u);
+      if (closed.has(uk)) continue;
+      closed.add(uk);
+      if (u.x === goal.x && u.y === goal.y) {
+        found = u;
+        break;
+      }
+      for (const [dx, dy] of [
+          [1, 0],
+          [-1, 0],
+          [0, 1],
+          [0, -1],
+          [1, 1],
+          [1, -1],
+          [-1, 1],
+          [-1, -1]
+        ]) {
+        const v = {
+          x: u.x + dx,
+          y: u.y + dy
+        };
+        if (v.x < 0 || v.x >= cols || v.y < 0 || v.y >= rows || !clear({
+            x: u.x * step,
+            y: u.y * step
+          }, {
+            x: v.x * step,
+            y: v.y * step
+          }, d)) continue;
+        const vk = key(v),
+          c = cost.get(uk) + Math.hypot(dx, dy);
+        if (c < (cost.get(vk) ?? Infinity)) {
+          cost.set(vk, c);
+          prev.set(vk, u);
+          open.push(v);
+        }
+      }
+    }
+    if (!found) return null;
+    const path = [b];
+    while (key(found) !== key(start)) {
+      path.push({
+        x: found.x * step,
+        y: found.y * step
+      });
+      found = prev.get(key(found));
+      if (!found) return null;
+    }
+    path.reverse();
+    if (!clear(a, path[0], d)) return null;
+    const simple = [];
+    let from = a,
+      i = 0;
+    while (i < path.length) {
+      let j = i;
+      while (j + 1 < path.length && clear(from, path[j + 1], d)) j++;
+      simple.push(path[j]);
+      from = path[j];
+      i = j + 1;
+    }
+    return simple;
+  }
+
+  function approach(o, d) {
+    if (!o) return null;
+    for (const p of [{
+        x: o.x,
+        y: o.y + o.h / 2 + 35
+      }, {
+        x: o.x - o.w / 2 - 35,
+        y: o.y
+      }, {
+        x: o.x + o.w / 2 + 35,
+        y: o.y
+      }, {
+        x: o.x,
+        y: o.y - o.h / 2 - 35
+      }])
+      if (!blocked(p, d)) return p;
+    return null;
+  }
+  const api = {
+    TYPES,
+    clone,
+    initial,
+    validate,
+    inside,
+    blocked,
+    clear,
+    plan,
+    approach
+  };
+  root.BittleCore = api;
+  if (typeof module !== 'undefined') module.exports = api;
+})(typeof window !== 'undefined' ? window : globalThis);

@@ -1,0 +1,816 @@
+[
+  {
+    "archive": "2025_Groep_1-main.zip",
+    "file": "2025_Groep_1-main/Lijntje/FinaleCodeAIVisionBLE.ino",
+    "hits": [
+      [
+        2,
+        "  XIAO ESP32S3 (BLE client) -> Petoi Bittle X (BiBoard) via BLE UART (NUS)"
+      ],
+      [
+        45,
+        "// ---- Notification callback (robot -> XIAO) ----"
+      ]
+    ]
+  },
+  {
+    "archive": "2025_Groep_1-main.zip",
+    "file": "2025_Groep_1-main/README.md",
+    "hits": [
+      [
+        45,
+        "Extra sensoren / motoren (ideaal via Grove)"
+      ]
+    ]
+  },
+  {
+    "archive": "2025_Groep_2-main.zip",
+    "file": "2025_Groep_2-main/ELA/AI vision/AItest_1.html",
+    "hits": [
+      [
+        5,
+        "    <title>Grove Vision AI - Simpele Stream</title>"
+      ],
+      [
+        14,
+        "    <h2>Grove Vision AI Stream</h2>"
+      ],
+      [
+        21,
+        "        const baseHost = \"http://192.168.1.xxx\"; // VERVANG DIT DOOR HET IP VAN JE CAMERA"
+      ]
+    ]
+  },
+  {
+    "archive": "2025_Groep_2-main.zip",
+    "file": "2025_Groep_2-main/ELA/AI vision/AItest_2.html",
+    "hits": [
+      [
+        6,
+        "    <title>Grove Vision AI - Stream Only</title>"
+      ],
+      [
+        74,
+        "                console.error(\"Fout bij verbinden met Grove Vision AI:\", err);"
+      ]
+    ]
+  },
+  {
+    "archive": "2025_Groep_2-main.zip",
+    "file": "2025_Groep_2-main/ELA/AI vision/AItest_3.html",
+    "hits": [
+      [
+        6,
+        "    <title>Grove Vision AI - 192.168.137.13</title>"
+      ]
+    ]
+  },
+  {
+    "archive": "2025_Groep_2-main.zip",
+    "file": "2025_Groep_2-main/ELA/AI vision/AItest_4.html",
+    "hits": [
+      [
+        6,
+        "    <title>Grove Vision AI - 240x240 Stream</title>"
+      ]
+    ]
+  },
+  {
+    "archive": "2025_Groep_2-main.zip",
+    "file": "2025_Groep_2-main/ELA/AI vision/Camera_test_1.html",
+    "hits": [
+      [
+        6,
+        "    <title>Grove Vision AI Component Test</title>"
+      ],
+      [
+        30,
+        "        /* De layout van onze camera grid */"
+      ],
+      [
+        41,
+        "        <h1>Vision AI Component Test</h1>"
+      ],
+      [
+        45,
+        "            <vision-ai-stream ip=\"192.168.137.166\" res=\"0\"></vision-ai-stream>"
+      ],
+      [
+        61,
+        "                this.startCamera();"
+      ],
+      [
+        94,
+        "                        <span class=\"ip-label\">Camera: ${this.ip}</span>"
+      ],
+      [
+        101,
+        "            async startCamera() {"
+      ],
+      [
+        127,
+        "                    console.error(\"Camera Error:\", err);"
+      ],
+      [
+        168,
+        "        customElements.define('vision-ai-stream', VisionAiStream);"
+      ]
+    ]
+  },
+  {
+    "archive": "2025_Groep_2-main.zip",
+    "file": "2025_Groep_2-main/ELA/AI vision/camera_test_2.html",
+    "hits": [
+      [
+        35,
+        "    <h1>Vision AI Bediening</h1>"
+      ],
+      [
+        38,
+        "        <label for=\"ipInput\">Camera IP:</label>"
+      ],
+      [
+        44,
+        "        <vision-ai-stream id=\"aiCam\" res=\"0\"></vision-ai-stream>"
+      ],
+      [
+        67,
+        "                this.startCamera();"
+      ],
+      [
+        86,
+        "            async startCamera() {"
+      ],
+      [
+        163,
+        "        customElements.define('vision-ai-stream', VisionAiStream);"
+      ]
+    ]
+  },
+  {
+    "archive": "2025_Groep_2-main.zip",
+    "file": "2025_Groep_2-main/ELA/Arduino (scanner)/vlx_BLE_afstand_rev11.ino",
+    "hits": [
+      [
+        135,
+        "  BLEDevice::init(\"XIAO_LIDAR_S3_BLE\");"
+      ]
+    ]
+  },
+  {
+    "archive": "2025_Groep_2-main.zip",
+    "file": "2025_Groep_2-main/ELA/Arduino (scanner)/vlx_BLE_afstand_rev6.ino",
+    "hits": [
+      [
+        108,
+        "  BLEDevice::init(\"XIAO_LIDAR_S3_BLE\"); "
+      ]
+    ]
+  },
+  {
+    "archive": "2025_Groep_2-main.zip",
+    "file": "2025_Groep_2-main/ELA/Arduino (scanner)/vlx_BLE_afstand_rev9.ino",
+    "hits": [
+      [
+        122,
+        "  BLEDevice::init(\"XIAO_LIDAR_S3_BLE\");"
+      ]
+    ]
+  },
+  {
+    "archive": "2025_Groep_2-main.zip",
+    "file": "2025_Groep_2-main/README.md",
+    "hits": [
+      [
+        4,
+        "Web-based Control, Vision AI & Radar System"
+      ],
+      [
+        5,
+        "RobotDawg (ook WarDog genoemd) is een experimenteel robotplatform dat een Petoi Bittle X quadruped robot combineert met een webgebaseerde HUD-interface, real-time Vision AI, Bluetooth-besturing en een actieve ToF-radar scanner."
+      ],
+      [
+        13,
+        "o\tLive Vision AI stream"
+      ],
+      [
+        20,
+        "3.\tVision AI Camera (XIAO ESP32-S3 / Grove Vision AI v2)"
+      ],
+      [
+        26,
+        "### Vision AI Livestream"
+      ],
+      [
+        77,
+        "## Vision AI Camera"
+      ],
+      [
+        78,
+        "•\tXIAO ESP32-S3 met Grove Vision AI v2"
+      ],
+      [
+        80,
+        "•\tCamera web server voor MJPEG streaming"
+      ],
+      [
+        85,
+        "### Camera IP (Web Interface)"
+      ],
+      [
+        91,
+        "ip ook te vinden na wifi Vision AI camera verbinding op toestel"
+      ],
+      [
+        103,
+        "### WiFi Vision AI Camera"
+      ],
+      [
+        105,
+        "In camera_web_server sketch:"
+      ],
+      [
+        112,
+        "1. Flash camera_web_server naar XIAO ESP32-S3"
+      ],
+      [
+        113,
+        "2. Noteer camera IP"
+      ],
+      [
+        122,
+        "RobotDawg / WarDog – experimenteel robotplatform voor integratie van robotbesturing, sensing en Vision AI."
+      ]
+    ]
+  },
+  {
+    "archive": "2025_Groep_2-main.zip",
+    "file": "2025_Groep_2-main/UI:UX/rev2/AIOverlay.html",
+    "hits": [
+      [
+        7,
+        "    <title>Grove Vision AI</title>"
+      ],
+      [
+        1691,
+        "                        alert('Failed to set resolution, please check the connection between your device and the camera sensor, then try again');"
+      ],
+      [
+        1719,
+        "                                alert('Failed to start stream, please check the connection between your device and the camera sensor, then try again');"
+      ],
+      [
+        1772,
+        "                                alert('Failed to start stream, please check the connection between your device and the camera sensor, make sure the model valid, then try again');"
+      ]
+    ]
+  },
+  {
+    "archive": "2025_Groep_2-main.zip",
+    "file": "2025_Groep_2-main/UI:UX/rev2/bounding box 15.0 test.html",
+    "hits": [
+      [
+        454,
+        "        <vision-ai-stream></vision-ai-stream>"
+      ],
+      [
+        1372,
+        "            // Configuratie: IP-adres van de camera"
+      ],
+      [
+        1379,
+        "            this.startCamera();"
+      ],
+      [
+        1417,
+        "        async startCamera() {"
+      ],
+      [
+        1480,
+        "    customElements.define('vision-ai-stream', VisionAiStream);"
+      ]
+    ]
+  },
+  {
+    "archive": "2025_Groep_2-main.zip",
+    "file": "2025_Groep_2-main/UI:UX/rev2/joysticks2_14.html",
+    "hits": [
+      [
+        454,
+        "        <vision-ai-stream></vision-ai-stream>"
+      ],
+      [
+        1372,
+        "            // Configuratie: IP-adres van de camera"
+      ],
+      [
+        1379,
+        "            this.startCamera();"
+      ],
+      [
+        1417,
+        "        async startCamera() {"
+      ],
+      [
+        1480,
+        "    customElements.define('vision-ai-stream', VisionAiStream);"
+      ]
+    ]
+  },
+  {
+    "archive": "2025_Groep_2-main.zip",
+    "file": "2025_Groep_2-main/UI:UX/rev2/joysticks2_15.html",
+    "hits": [
+      [
+        454,
+        "        <vision-ai-stream></vision-ai-stream>"
+      ],
+      [
+        1372,
+        "            // Configuratie: IP-adres van de camera"
+      ],
+      [
+        1379,
+        "            this.startCamera();"
+      ],
+      [
+        1417,
+        "        async startCamera() {"
+      ],
+      [
+        1480,
+        "    customElements.define('vision-ai-stream', VisionAiStream);"
+      ]
+    ]
+  },
+  {
+    "archive": "2025_Groep_2-main.zip",
+    "file": "2025_Groep_2-main/UI:UX/rev2/joysticks2_18.html",
+    "hits": [
+      [
+        454,
+        "        <vision-ai-stream></vision-ai-stream>"
+      ],
+      [
+        1263,
+        "            // Configuratie: IP-adres van de camera"
+      ],
+      [
+        1270,
+        "            this.startCamera();"
+      ],
+      [
+        1308,
+        "        async startCamera() {"
+      ],
+      [
+        1330,
+        "                console.error(\"Camera connection failed:\", err);"
+      ],
+      [
+        1370,
+        "    customElements.define('vision-ai-stream', VisionAiStream);"
+      ]
+    ]
+  },
+  {
+    "archive": "2025_Groep_2-main.zip",
+    "file": "2025_Groep_2-main/UI:UX/rev2/joysticks2_19.html",
+    "hits": [
+      [
+        454,
+        "        <vision-ai-stream></vision-ai-stream>"
+      ],
+      [
+        1257,
+        "            // Configuratie: IP-adres van de camera"
+      ],
+      [
+        1264,
+        "            this.startCamera();"
+      ],
+      [
+        1302,
+        "        async startCamera() {"
+      ],
+      [
+        1324,
+        "                console.error(\"Camera connection failed:\", err);"
+      ],
+      [
+        1364,
+        "    customElements.define('vision-ai-stream', VisionAiStream);"
+      ]
+    ]
+  },
+  {
+    "archive": "2025_Groep_2-main.zip",
+    "file": "2025_Groep_2-main/UI:UX/rev2/joysticks2_20.html",
+    "hits": [
+      [
+        454,
+        "        <vision-ai-stream></vision-ai-stream>"
+      ],
+      [
+        1239,
+        "            // Configuratie: IP-adres van de camera"
+      ],
+      [
+        1246,
+        "            this.startCamera();"
+      ],
+      [
+        1284,
+        "        async startCamera() {"
+      ],
+      [
+        1306,
+        "                console.error(\"Camera connection failed:\", err);"
+      ],
+      [
+        1346,
+        "    customElements.define('vision-ai-stream', VisionAiStream);"
+      ]
+    ]
+  },
+  {
+    "archive": "2025_Groep_2-main.zip",
+    "file": "2025_Groep_2-main/UI:UX/rev2/joysticks2_22.html",
+    "hits": [
+      [
+        454,
+        "        <vision-ai-stream></vision-ai-stream>"
+      ],
+      [
+        1255,
+        "            // Configuratie: IP-adres van de camera"
+      ],
+      [
+        1262,
+        "            this.startCamera();"
+      ],
+      [
+        1300,
+        "        async startCamera() {"
+      ],
+      [
+        1322,
+        "                console.error(\"Camera connection failed:\", err);"
+      ],
+      [
+        1362,
+        "    customElements.define('vision-ai-stream', VisionAiStream);"
+      ]
+    ]
+  },
+  {
+    "archive": "2025_Groep_2-main.zip",
+    "file": "2025_Groep_2-main/UI:UX/rev2/joysticks2_25.html",
+    "hits": [
+      [
+        487,
+        "        <vision-ai-stream></vision-ai-stream>"
+      ],
+      [
+        1184,
+        "                        { namePrefix: 'XIAO' },"
+      ],
+      [
+        1337,
+        "            // Configuratie: IP-adres van de camera"
+      ],
+      [
+        1344,
+        "            this.startCamera();"
+      ],
+      [
+        1382,
+        "        async startCamera() {"
+      ],
+      [
+        1404,
+        "                console.error(\"Camera connection failed:\", err);"
+      ],
+      [
+        1444,
+        "    customElements.define('vision-ai-stream', VisionAiStream);"
+      ]
+    ]
+  },
+  {
+    "archive": "2025_Groep_2-main.zip",
+    "file": "2025_Groep_2-main/UI:UX/rev2/joysticks2_26.html",
+    "hits": [
+      [
+        487,
+        "        <vision-ai-stream></vision-ai-stream>"
+      ],
+      [
+        1184,
+        "                        { namePrefix: 'XIAO' },"
+      ],
+      [
+        1343,
+        "            this.startCamera();"
+      ],
+      [
+        1362,
+        "        async startCamera() {"
+      ],
+      [
+        1381,
+        "            } catch (err) { console.error(\"Vision AI Error:\", err); }"
+      ],
+      [
+        1434,
+        "    customElements.define('vision-ai-stream', VisionAiStream);"
+      ]
+    ]
+  },
+  {
+    "archive": "2025_Groep_2-main.zip",
+    "file": "2025_Groep_2-main/UI:UX/rev2/joysticks2_27.html",
+    "hits": [
+      [
+        487,
+        "        <vision-ai-stream></vision-ai-stream>"
+      ],
+      [
+        1184,
+        "                        { namePrefix: 'XIAO' },"
+      ],
+      [
+        1343,
+        "            this.startCamera();"
+      ],
+      [
+        1365,
+        "        async startCamera() {"
+      ],
+      [
+        1384,
+        "            } catch (err) { console.error(\"Vision AI Error:\", err); }"
+      ],
+      [
+        1461,
+        "    customElements.define('vision-ai-stream', VisionAiStream);"
+      ]
+    ]
+  },
+  {
+    "archive": "2025_Groep_2-main.zip",
+    "file": "2025_Groep_2-main/UI:UX/rev2/joysticks2_29.html",
+    "hits": [
+      [
+        487,
+        "        <vision-ai-stream></vision-ai-stream>"
+      ],
+      [
+        1182,
+        "                        { namePrefix: 'XIAO' },"
+      ],
+      [
+        1341,
+        "            this.startCamera();"
+      ],
+      [
+        1360,
+        "        async startCamera() {"
+      ],
+      [
+        1381,
+        "            } catch (err) { console.error(\"Vision AI Error:\", err); }"
+      ],
+      [
+        1402,
+        "                            // Forceer 90 graden rotatie als de camera het niet meestuurt"
+      ],
+      [
+        1491,
+        "    customElements.define('vision-ai-stream', VisionAiStream);"
+      ]
+    ]
+  },
+  {
+    "archive": "2025_Groep_2-main.zip",
+    "file": "2025_Groep_2-main/UI:UX/rev2/joysticks2_30.html",
+    "hits": [
+      [
+        487,
+        "        <vision-ai-stream></vision-ai-stream>"
+      ],
+      [
+        777,
+        "            // Luister naar detectie events van de Vision AI component"
+      ],
+      [
+        1190,
+        "                        { namePrefix: 'XIAO' },"
+      ],
+      [
+        1351,
+        "            this.startCamera();"
+      ],
+      [
+        1370,
+        "        async startCamera() {"
+      ],
+      [
+        1391,
+        "            } catch (err) { console.error(\"Vision AI Error:\", err); }"
+      ],
+      [
+        1412,
+        "                            // Forceer 90 graden rotatie als de camera het niet meestuurt"
+      ],
+      [
+        1501,
+        "    customElements.define('vision-ai-stream', VisionAiStream);"
+      ]
+    ]
+  },
+  {
+    "archive": "2025_Groep_2-main.zip",
+    "file": "2025_Groep_2-main/UI:UX/rev2/joysticks2_31.html",
+    "hits": [
+      [
+        487,
+        "        <vision-ai-stream></vision-ai-stream>"
+      ],
+      [
+        778,
+        "            // Luister naar detectie events van de Vision AI component"
+      ],
+      [
+        1234,
+        "                        { namePrefix: 'XIAO' },"
+      ],
+      [
+        1395,
+        "            this.startCamera();"
+      ],
+      [
+        1414,
+        "        async startCamera() {"
+      ],
+      [
+        1435,
+        "            } catch (err) { console.error(\"Vision AI Error:\", err); }"
+      ],
+      [
+        1456,
+        "                            // Forceer 90 graden rotatie als de camera het niet meestuurt"
+      ],
+      [
+        1545,
+        "    customElements.define('vision-ai-stream', VisionAiStream);"
+      ]
+    ]
+  },
+  {
+    "archive": "2025_Groep_2-main.zip",
+    "file": "2025_Groep_2-main/UI:UX/rev2/joysticks2_33.html",
+    "hits": [
+      [
+        487,
+        "        <vision-ai-stream></vision-ai-stream>"
+      ],
+      [
+        772,
+        "            // Luister naar detectie events van de Vision AI component"
+      ],
+      [
+        1229,
+        "                        { namePrefix: 'XIAO' },"
+      ],
+      [
+        1390,
+        "            this.startCamera();"
+      ],
+      [
+        1409,
+        "        async startCamera() {"
+      ],
+      [
+        1430,
+        "            } catch (err) { console.error(\"Vision AI Error:\", err); }"
+      ],
+      [
+        1451,
+        "                            // Forceer 90 graden rotatie als de camera het niet meestuurt"
+      ],
+      [
+        1540,
+        "    customElements.define('vision-ai-stream', VisionAiStream);"
+      ]
+    ]
+  },
+  {
+    "archive": "2025_Groep_2-main.zip",
+    "file": "2025_Groep_2-main/UI:UX/rev2/joysticks2_FINAAL.html",
+    "hits": [
+      [
+        487,
+        "        <vision-ai-stream></vision-ai-stream>"
+      ],
+      [
+        772,
+        "            // Luister naar detectie events van de Vision AI component"
+      ],
+      [
+        1229,
+        "                        { namePrefix: 'XIAO' },"
+      ],
+      [
+        1390,
+        "            this.startCamera();"
+      ],
+      [
+        1409,
+        "        async startCamera() {"
+      ],
+      [
+        1430,
+        "            } catch (err) { console.error(\"Vision AI Error:\", err); }"
+      ],
+      [
+        1451,
+        "                            // Forceer 90 graden rotatie als de camera het niet meestuurt"
+      ],
+      [
+        1540,
+        "    customElements.define('vision-ai-stream', VisionAiStream);"
+      ]
+    ]
+  },
+  {
+    "presentation": "Concept-presentatie-v2-NL.pptx",
+    "slide": "ppt/slides/slide3.xml",
+    "text": "Team & rollen (2/2) 3 Hardware Manager :  nog te bepalen Verantwoordelijk   voor  de taken van het HW- subteam Elektronica Manager :  nog te bepalen Verantwoordelijk   voor  de taken van het EL- subteam UI/UX Manager :  nog te bepalen Verantwoordelijk   voor  de taken van het UI/UX- subteam Module Manager :  nog   te   bepalen Uitlenen ,  bestellen   en   beheren  van extra modules ( sensoren / actuatoren ) Movie Manager :  nog   te   bepalen Regie van het  filmpje"
+  },
+  {
+    "presentation": "Concept-presentatie-v2-NL.pptx",
+    "slide": "ppt/slides/slide6.xml",
+    "text": "Kippenhok: team Hardware 6 Team Hardware: Wannes, Arno TAKEN Robuuster   loopalgoritme   voor   oneffen   grond Aangepaste   voeten   voor  grip op gras Houders   voor  camera, speaker  en   leds Dockingstation  met  laadcontacten ONZE ONDERZOEKSVRAGEN Welk  voetmateriaal   grijpt  op  nat  gras? … GROOTSTE UITDAGING Ruw   terrein   en  weer.   Bittle X  in  een   vochtig   hok   overleeft . EERSTE TEST Korte,  begeleide   wandeling  op  stro  of  zand , plus  een   proefhok  in  simulatie ."
+  },
+  {
+    "presentation": "Concept-presentatie-v2-NL.pptx",
+    "slide": "ppt/slides/slide7.xml",
+    "text": "Kippenhok: team Elektronica 7 Team Elektronica: Ben, Ward TAKEN ESP32-S3-camera (eigen 5 V) via I2C/UART  aan  de  BiBoard Herkenning  op de camera:  vos , kip,  mens ; IR- verlichting  's  nachts ToF- afstandssensor   langs  de  omheining  (XSHUT  voor   adressen ) L a adstation : Qi- ontvanger   en  - zender ,  magneetkabel Alarmgeluid  (buzzer of  cameraspeaker )  en   leds ONZE ONDERZOEKSVRAGEN Werkt  de IR- verlichting  van de camera 's  nachts   buiten ? Hoe lang  kan  Bittle  patrouilleren  op  één  lading? GROOTSTE UITDAGING Betrouwbare   herkenning  's  nachts   en  de  koppeling  van de  aparte  camera met de  BiBoard . EERSTE TEST Herkenning   testen  op  opgenomen   beelden  van  een   hok ."
+  },
+  {
+    "presentation": "Concept-presentatie-v2-NL.pptx",
+    "slide": "ppt/slides/slide9.xml",
+    "text": "Kippenhok: plan van aanpak 9 Fysieke vormgeving / gedrag 3D-geprinte  grijpvoeten Patrouilleroute  met  dreigingsniveaus Afschrikgedrag :  flitslicht ,  alarmgeluid ,  dreigende   houding Interface / bediening Webdashboard met livebeeld Pushmeldingen per detectie Gevoeligheid en zones instellen Materiaal ESP32-S3-camera VL53L0X ToF-sensor Magneetkabel USB-C Qi-oplaadset Piëzo-buzzer 3D-printen / lasersnijden Geschat budget onderdelen: € 50,13 + UA-onderdelen  (excl. 3D-printen en lasersnijden)"
+  },
+  {
+    "presentation": "Concept-presentatie-v2-NL.pptx",
+    "slide": "ppt/slides/slide10.xml",
+    "text": "Kippenhok: materiaal en budget 10 {5C22544A-7EE6-4342-B048-85BDC9FD1C3A} Onderdeel Doel Geschatte prijs Link DFRobot ESP32-S3 AI-cameramodule (DFR1154) Beeldherkenning, IR-gevoelig, met micro en speaker. Eigen 5 V, I2C/UART naar BiBoard € 20,70 Link GERUI VL53L0X ToF-afstandssensor (6 stuks) Afstand tot 2 m (I2C). Pak van 6; XSHUT nodig voor eigen adressen € 12 nog toe te voegen Kuulaa USB-C magneetkabel, 3A Dockcontact: magnetische laadverbinding (5 V / 3 A) € 8 nog toe te voegen Qi-oplaadset 5 V / 1 A: ontvanger + zender (Kiwi Electronics) Ontvanger op de robot, zender in het dock (2–10 mm, losse printjes) € 9,43 Link Piëzoschijf of buzzer Alarm- of afschrikgeluid (de camerakit heeft ook een speaker) UA* nog toe te voegen Totaal (schatting) € 50,13 + UA-onderdelen * UA = beschikbaar via de Universiteit Antwerpen. Prijzen met een link: onderzocht op 25 okt 2026, incl. btw. Andere prijzen: schatting van het team."
+  },
+  {
+    "presentation": "Concept-presentatie-v2-NL.pptx",
+    "slide": "ppt/slides/slide12.xml",
+    "text": "Museumgids: team Hardware 12 Team Hardware: Wannes, Arno TAKEN Rustige, stabiele gang op een vlakke vloer Houder voor de camera Houder voor een luidere speaker Dockingstation voor automatisch laden Uitstraling die bezoekers aanspreekt ONZE ONDERZOEKSVRAGEN Hoe stabiel is de gang op gepolijste vloeren? Waar kan de speaker zitten zonder de poten te hinderen? GROOTSTE UITDAGING Een wandelende robot drijft af, dus de positie is niet exact. EERSTE TEST Een afgeplakte route 10 keer lopen en de afwijking meten."
+  },
+  {
+    "presentation": "Concept-presentatie-v2-NL.pptx",
+    "slide": "ppt/slides/slide13.xml",
+    "text": "Museumgids: team Elektronica 13 Team Elektronica: Ben, Ward TAKEN Camera met herkenning van markers en bezoekers ToF-sensor om bezoekers en muren te ontwijken Positie schatten met IMU en markers Speaker met een verhaal per kunstwerk Draadloos laden: Qi-ontvanger en -zender, magneetkabel ONZE ONDERZOEKSVRAGEN Op welke afstand en hoek worden markers herkend? Hoe luid moet de speaker zijn in een stille zaal? GROOTSTE UITDAGING Nauwkeurig navigeren met markers en IMU. EERSTE TEST Bereik en hoek van de markerherkenning meten met de ESP32-S3-camera."
+  },
+  {
+    "presentation": "Concept-presentatie-v2-NL.pptx",
+    "slide": "ppt/slides/slide15.xml",
+    "text": "Museumgids: plan van aanpak 15 Fysieke vormgeving / gedrag Rustige gang en gebaren die naar kunstwerken wijzen Stopt, kijkt en spreekt bij elk kunstwerk Keert na de rondleiding terug naar het dock Interface / bediening Voorkeurenapp in 4 stappen Routeoverzicht en voortgang Taal en duur instellen Materiaal ESP32-S3-camera VL53L0X ToF-sensor Magneetkabel USB-C Qi-oplaadset Degelijke speaker 3D-printen / lasersnijden Geschat budget onderdelen: € 50,13 + UA-onderdelen  (excl. 3D-printen en lasersnijden)"
+  },
+  {
+    "presentation": "Concept-presentatie-v2-NL.pptx",
+    "slide": "ppt/slides/slide16.xml",
+    "text": "Museumgids: materiaal en budget 16 {5C22544A-7EE6-4342-B048-85BDC9FD1C3A} Onderdeel Doel Geschatte prijs Link DFRobot ESP32-S3 AI-cameramodule (DFR1154) Beeldherkenning, IR-gevoelig, met micro en speaker. Eigen 5 V, I2C/UART naar BiBoard € 20,70 Link GERUI VL53L0X ToF-afstandssensor (6 stuks) Afstand tot 2 m (I2C). Pak van 6; XSHUT nodig voor eigen adressen € 12 nog toe te voegen Kuulaa USB-C magneetkabel, 3A Dockcontact: magnetische laadverbinding (5 V / 3 A) € 8 nog toe te voegen Qi-oplaadset 5 V / 1 A: ontvanger + zender (Kiwi Electronics) Ontvanger op de robot, zender in het dock (2–10 mm, losse printjes) € 9,43 Link Degelijke kleine speaker Audioverhaal per kunstwerk (camerakit heeft een kleine speaker) UA* nog toe te voegen Totaal (schatting) € 50,13 + UA-onderdelen * UA = beschikbaar via de Universiteit Antwerpen. Prijzen met een link: onderzocht op 25 okt 2026, incl. btw. Andere prijzen: schatting van het team."
+  },
+  {
+    "presentation": "Concept-presentatie-v2-NL.pptx",
+    "slide": "ppt/slides/slide18.xml",
+    "text": "Waakhond thuis: team Hardware 18 Team Hardware: Wannes, Arno TAKEN Compacte   sensorhouder   voor  camera  en  radar Motoriek  over  drempels ,  tapijt   en   gladde   vloeren Dockingstation   en   alarmbehuizing Trappen  onderzoeken :  klimmen  of  vermijden ? ONZE ONDERZOEKSVRAGEN Welke  drempelhoogte   haalt  Bittle? Kan Bittle  na   een   val  op  tapijt  weer  opstaan ? GROOTSTE UITDAGING Drempels ,  tapijt , routes  en   trappen . EERSTE TEST Bittle over  een   drempel   en   een   tapijt  laten  lopen   en  de  fouten   noteren ."
+  },
+  {
+    "presentation": "Concept-presentatie-v2-NL.pptx",
+    "slide": "ppt/slides/slide19.xml",
+    "text": "Waakhond thuis: team Elektronica 19 Team Elektronica: Ben, Ward TAKEN Camera die  mensen   en  open  deuren   herkent mmWave -radar (LD2410C, UART)  voor   beweging  achter  dunne   wanden Alarm:  sirene  (buzzer)  en  led Draadloos  laden: Qi- ontvanger   en  - zender ,  magneetkabel ToF-sensor om  obstakels   te   ontwijken ONZE ONDERZOEKSVRAGEN Hoe  ver   ziet  de radar door  gipsplaat   en   welke  zones  vermijden  de  buurkamer ? Hoe  vermijden  we valse  alarmen  door  huisdieren ? GROOTSTE UITDAGING De radar  ziet   beweging  achter  dunne   wanden  maar  geeft   geen   beeld . Het  bereik  door  wanden  is  enkel  van de  leverancier   gekend . EERSTE TEST Een  mmWave -module  testen  achter  een   gipsplaat ."
+  },
+  {
+    "presentation": "Concept-presentatie-v2-NL.pptx",
+    "slide": "ppt/slides/slide21.xml",
+    "text": "Waakhond thuis: plan van aanpak 21 Fysieke vormgeving / gedrag Compacte sensorkop op de rug Vaste patrouilleroute met stops per kamer Alarmgedrag: sirene, led, houding Interface / bediening Routeeditor per kamer Schakelaar thuis/weg Alarmmeldingen met snapshot Materiaal ESP32-S3-camera VL53L0X ToF-sensor Magneetkabel USB-C Qi-oplaadset Piëzo-buzzer mmWave-radar 3D-printen / lasersnijden Geschat budget onderdelen: € 55,38 + UA-onderdelen  (excl. 3D-printen en lasersnijden)"
+  },
+  {
+    "presentation": "Concept-presentatie-v2-NL.pptx",
+    "slide": "ppt/slides/slide22.xml",
+    "text": "Waakhond thuis: materiaal en budget 22 {5C22544A-7EE6-4342-B048-85BDC9FD1C3A} Onderdeel Doel Geschatte prijs Link DFRobot ESP32-S3 AI-cameramodule (DFR1154) Beeldherkenning, IR-gevoelig, met micro en speaker. Eigen 5 V, I2C/UART naar BiBoard € 20,70 Link GERUI VL53L0X ToF-afstandssensor (6 stuks) Afstand tot 2 m (I2C). Pak van 6; XSHUT nodig voor eigen adressen € 12 nog toe te voegen Kuulaa USB-C magneetkabel, 3A Dockcontact: magnetische laadverbinding (5 V / 3 A) € 8 nog toe te voegen Qi-oplaadset 5 V / 1 A: ontvanger + zender (Kiwi Electronics) Ontvanger op de robot, zender in het dock (2–10 mm, losse printjes) € 9,43 Link Piëzoschijf of buzzer Alarm- of afschrikgeluid (de camerakit heeft ook een speaker) UA* nog toe te voegen Hi-Link HLK-LD2410C 24 GHz-radarmodule Beweging achter dunne wanden, geen beeld. 0,75–6 m, UART € 5,25 Link Totaal (schatting) € 55,38 + UA-onderdelen * UA = beschikbaar via de Universiteit Antwerpen. Prijzen met een link: onderzocht op 25 okt 2026, incl. btw. Andere prijzen: schatting van het team."
+  },
+  {
+    "presentation": "Concept-presentatie-v2-NL.pptx",
+    "slide": "ppt/slides/slide23.xml",
+    "text": "Open punten en volgende stappen 23 Beslissen Eén concept kiezen (criteria: innovatie, verkoopbaarheid, haalbaarheid) Radarmodel en dockingsysteem kiezen (open) Toetsen Waterbestendigheid toetsen aan de veiligheidsregels voor de robot IR-bereik van de camera en bereik van de radar door wanden testen Voorbereiden Onderdelen bestellen na de conceptkeuze Digital twin opzetten voor de gekozen route"
+  }
+]

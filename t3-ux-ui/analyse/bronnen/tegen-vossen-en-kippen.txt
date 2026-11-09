@@ -1,0 +1,95 @@
+Samenvatting
+Goedkoopste vosbestendige basis (mijn afleiding uit F1–F3, F6): nachthok of omheining volgens de ANB-norm. Dat is gaas met mazen ≤3 cm (kippengaas ≤4 cm), draad ≥1,5 mm, ingegraven of verharde bodem, en ≥180 cm hoog of ≥100 cm met stroomdraad. Kost NL 2017: ~€7/m materiaal, ~€30/m geplaatst (schatting, zwakke bron).
+Automatische deur (Omlet €190; DE-budget €20–62) is comfort en regelmaat, geen bescherming op zich. Ik vond geen onafhankelijk onderzoek naar effect op verliezen (F11–F14).
+Licht/geluid: geen peer-reviewed bewijs voor kippen.
+Foxlights: +39% vosactiviteit op een Australisch varkensbedrijf (F16).
+Ultrasoon: gemengd (F18).
+Nite Guard: enkel bedrijfs- en webshopclaims (F20).
+Tegenstrijdig: een Kenia-studie vond wel effect, maar bij jakhals/caracal (F17).
+Wildcamera (€123 NL, €159–365 BE): geeft alleen een melding. Bewijs voor minder verlies: geen gevonden (F22–F25).
+Waakdieren: het sterkste bewijs betreft waakhonden bij schapen, waar vossen schuwer foerageren (F26). Kippenspecifiek bewijs is schaars (F27). Lama’s op pluimveebedrijven: predatie 40%→6% (VS, zelfrapportage, F29).
+Robot: het enige experiment (F30–F32) toont dat een bewegende, reagerende afschrikker aas 214,7 min bewaarde, tegen 4,3 min baseline. Het ging om gevangen coyotes, een RC-auto bestuurd door een mens, zonder gewenningstest en zonder veldtest.
+Bittle X is hardware-matig ongeschikt: 1 uur batterij, niet waterdicht, 1 lb draagvermogen (F34).
+Eerlijk antwoord: met een correct gesloten nachthok blijft er praktisch bijna niets over voor een robot. De resterende niche is een onderzoeksvraag (adaptieve mobiele afschrikker bij vrije uitloop/schemer) en is niet bewezen.
+Tegenstrijdig, niet beslist: F16 vs F17; F37 (vos overdag niet) vs F14 (vos actief in schemer); ingraafdiepte 30 vs 50 cm (F8).
+Zwakste bronnen: webshops, blog en forum (F15, F20, F21), plus het Flevoland-rapport (gehost door een politieke partij).
+Bevindingen
+
+Tags in “bewering”: [meting], [schatting], [mening], [advies], [prijs]. Prijzen zijn opgehaald op 31-10-2026.
+
+id	bewering	waarde	eenheid	regio	jaar	bronsoort	bron_titel	bron_url	zekerheid
+F1	ANB-norm hoge omheining: ≥180 cm zonder stroom, of ≥120 cm met 1 stroomdraad boven + 1 geaarde draad; mazen ≤3 cm (kippengaas ≤4 cm); ingraven of verharde bodem [advies]	180 / 120	cm	Vlaanderen	2022	officiële instantie	(Samen)leven met vossen, ANB-folder	https://natuurenbos.vlaanderen.be/sites/default/files/documenten/vossen.pdf	hoog
+F2	ANB-norm elektrische omheining: ≥100 cm, stroomdraad bovenaan, mazen ≤3 cm (kippengaas ≤4 cm), draad ≥1,5 mm, ondergraafmaatregel; bovenrand 30° naar buiten; springplanken verwijderen [advies]	100	cm	Vlaanderen	2022	officiële instantie	(Samen)leven met vossen, ANB-folder	https://natuurenbos.vlaanderen.be/sites/default/files/documenten/vossen.pdf	hoog
+F3	ANB: vossen jagen vooral ‘s nachts; afsluitbaar nachthok met dichte gaten en ondoordringbare bodem; volledig afgesloten verblijf = meeste zekerheid; bij automatische deuren ‘controleer regelmatig’ [advies]	n.v.t.	n.v.t.	Vlaanderen	2022	officiële instantie	(Samen)leven met vossen, ANB-folder	https://natuurenbos.vlaanderen.be/sites/default/files/documenten/vossen.pdf	hoog
+F4	Steenmarter kan door gaten groter dan 5 cm [advies]	5	cm	Vlaanderen	ONBEKEND	officiële instantie	Steenmarter (Vlaamse publicatie)	https://publicaties.vlaanderen.be/view-file/23310	middel
+F5	12 van 17 freiland-pluimveebedrijven voldeden niet aan de minimale afrasteringseisen van de ontheffing; 4 wel; 1 onzeker. Beoordeling vanaf de openbare weg [meting]	12 van 17	bedrijven	Flevoland (NL)	2017	rapport (geen peer review; gehost door politieke partij)	Bescherming tegen predatie door vossen bij Freilandkippenbedrijven in Flevoland	https://assets.partijvoordedieren.nl/assets/data/files/2017/03/20172402BeschermingtegenpredatiedoorvossenbijFreilandkippenbedrijveninFlevoland-dfd7e4dd.pdf	middel
+F6	Materiaalkosten eenvoudige bescherming ~€7/m; hekwerk met ‘vrijwel 100%’ bescherming ~€30/m incl. plaatsing, 25 jaar garantie volgens leverancier [schatting]	7 / 30	EUR per strekkende meter	Nederland	2017	rapport (zie F5)	idem F5	zie F5	laag
+F7	Schrikdraad toevoegen aan bestaand hek kost ~€250 en wordt ‘relatief goedkoop en effectief’ genoemd [schatting/mening]	250	EUR	Nederland	2017	rapport (zie F5)	idem F5	zie F5	laag
+F8	Ingraafdiepte tegenstrijdig: Bureau Mulder ≥30 cm; Natuurpunt 50 cm of rij tegels ≥40 cm breed, dat laatste als ‘praktisch 100%’ bescherming tegen vos én marter (tweedehands geciteerd) [advies]	30 vs 50	cm	NL / Vlaanderen	2014 / 2017	rapport (zie F5)	idem F5	zie F5	laag
+F9	Gallagher: ‘succesvolle projecten’ met schrikdraad tegen vos bij weidevogels; adviseert dubbele afrastering [mening]	n.v.t.	n.v.t.	NL	2024	bedrijf	NL Whitepaper Fox 2024	https://gallagher.eu/media/87/44/a6/1732538769/NL_Whitepaper_Fox_2024.pdf	laag
+F10	Gallagher kippennet 112 cm x 50 m groen: €159 (weergegeven ‘159-’), levering €4,99; schrikdraadapparaat niet inbegrepen vermeld; ANB-folder noemt schrikdraadnet niet; of het als erkende maatregel telt: ONBEKEND [prijs]	159	EUR	België	2026	webshop	Gallagher Kippennet enkele pen 112cm 50m groen (Hubo)	https://www.hubo.be/nl/p/gallagher-kippennet-enkele-pen-112cm-50m-groen/979792/	middel
+F11	Omlet automatische deur groen €190 (voedingskabel niet meegeleverd); kippenhoklamp €30, werkt tot 4 maanden op 4 AA [prijs]	190 / 30	EUR	Nederland	2026	webshop	Kippenhoklamp, Omlet NL	https://www.omlet.nl/kippenhoklamp-automatische-kippenhokdeur/	middel
+F12	Omlet Slimme Autodoor + lamp (Eglu Go) €199; −20 tot 65 °C; tot 3 maanden op 4 AA of netstroom; los bedieningspaneel €110 [prijs]	199	EUR	Nederland	2026	webshop	Slimme Autodoor met Kippenhoklamp voor Eglu Go	https://www.omlet.nl/shop/kippen_houden/slimme-autodoor-met-kippenhoklamp-voor-eglu-go/	hoog
+F13	Budgetdeuren in DE: €19,98 (lichtsensor, 3 AA); kwaliteit en vosbestendigheid ONBEKEND [prijs]	19,98	EUR	Duitsland	2026	webshop (marktplaats)	Automatisch Hühnertür mit Lichtsensor (eBay.de)	https://www.ebay.de/itm/127029127608	laag
+F14	Britse tijdschriftredactie: auto-openers zijn ‘niet onfeilbaar’, kippen moeten dagelijks gecontroleerd worden; prijzen tot £200; vossen zijn ‘het actiefst in de schemer’ [mening]	tot 200	GBP	VK	ONBEKEND	tijdschrift (redactioneel)	Country Smallholder, coop auto-openers	https://thecountrysmallholder.com/?p=12164	laag
+F15	Blogreview: gesloten Omlet-deur ‘ver buiten het kunnen van de slimste vos’ [mening]	n.v.t.	n.v.t.	VK	ONBEKEND	blog	Omlet Automatic Chicken Coop Door Review & Test	https://www.chickens.allotment-garden.org/keeping-chickens/chicken-poultry-housing/omlet-automatic-chicken-coop-door-review-test/	laag
+F16	Foxlights: 39% meer vosactiviteit op donkere nachten dan controle; ‘eerder aantrekker dan afschrikker’ (geen versterking met menselijke activiteit) [meting, voorspeld]	+39	% vosactiviteit	Australië (varkensbedrijf)	ONBEKEND	peer-reviewed	In the spotlight: Can lights be used to mitigate fox predation on a free-range piggery?	https://researchportal.murdoch.edu.au/esploro/outputs/journalArticle/In-the-spotlight-Can-lights-be/991005540216607891	middel
+F17	Tegenstrijdig met F16: knipperlichten (Foxlights) kunnen effectief zijn om vee in kraals te beschermen, maar tegen jakhals en caracal, n=5 lampen; langetermijn/gewenning onbekend [meting]	n=5	lampen	Kenia	ONBEKEND	tijdschriftnotitie (Conservation Evidence)	Verschueren et al., flashing lights	https://cheetah.org/cheetah-2019/wp-content/uploads/2022/02/Verschueren_et_al_CEJ_18_50_51.pdf	laag
+F18	Ultrasoon: vossen bezochten controle-nesten ‘vaker’, maar bezoekfrequentie verschilde niet; extra afschrikprikkels waarschijnlijk nodig [meting]	n.v.t.	n.v.t.	Australië (stranden)	2024	peer-reviewed	Acoustic deterrents for Red Fox and shorebird clutch survival	https://doaj.org/article/b4ff2a4d1f324199a77485048bc276b3	middel
+F19	Licht + ultrasoon bij edelhert: −48,96% gebruik van het gebied, maar gewenning (gebruik nam toe in de tijd); geen vos [meting]	−48,96	% gebruik	Spanje	2022	peer-reviewed	Evaluation of a combined light-ultrasound device (red deer)	https://link.springer.com/article/10.1007/s10344-022-01599-2	middel
+F20	Nite Guard: ‘bewezen’ volgens fabrikant-advertorial, zonder onderzoek; een koper meldt 8 kippen verloren aan coyote terwijl 4 lampen aan stonden [mening]	n.v.t.	n.v.t.	VS	ONBEKEND	bedrijf/advertorial + webshopreview	FARM SHOW Nite Guard Solar / desertcart-review	https://www.farmshow.com/a_article.php?aid=29092	laag
+F21	Solar Nite Eyes $27,99; BE/NL-prijs ONBEKEND [prijs]	27,99	USD	VS	ONBEKEND	webshop (affiliate)	Solar Nite Eyes (Gardenista)	https://gardenista.com/products/solar-nite-eyes-predator-protection-system	laag
+F22	Rollei Wildcamera 4G SimConnect €123,01 incl. btw; pushmelding via app [prijs]	123,01	EUR	Nederland	2026	webshop	Rollei Wildcamera 4G SimConnect (Proshop.nl)	https://www.proshop.nl/Videobewaking/Rollei-Wildcamera-4G-SimConnect/3463124	hoog
+F23	Dezelfde camera: ~6 maanden werking op 8 AA (fabrikant) [schatting]	6	maanden	Duitsland	ONBEKEND	fabrikant	Rollei 4G SimConnect 40532	https://www.rolleifilm.de/en/products/wildkamera-4g-simconnect-40532	middel
+F24	BE-aanbod 4G-wildcamera’s: €159–€365; abonnement gratis (100 foto’s/maand) tot €10/maand (1000 foto’s) [prijs]	159–365	EUR	België	2026	webshop	Wildcamera (Decathlon.be)	https://www.decathlon.be/nl/vc/wildcamera	middel
+F25	Effect van camera’s op predatieverlies: ONBEKEND (geen studie gevonden; camera meldt alleen)	ONBEKEND	n.v.t.	n.v.t.	n.v.t.	n.v.t.	geen bron	n.v.t.	laag
+F26	Waakhonden (Maremma): vossen komen wel voor in LGD-gebied, maar detectiekans daalt met LGD-aanwezigheid en ze eten minder van aasstations; geen uitsluiting [meting]	n.v.t.	n.v.t.	Australië (schapen)	2024	peer-reviewed	Livestock guardian dogs establish a landscape of fear for wild predators	https://doi.org/10.1002/2688-8319.12299	hoog
+F27	Er is ‘weinig gepubliceerde literatuur’ over waakhonden voor kippen; één gevalstudie op een legbedrijf met vossen [mening auteurs]	n.v.t.	n.v.t.	W-Australië	ONBEKEND	peer-reviewed	Livestock guardian dog protection of free-range poultry from the red fox	https://www.publish.csiro.au/an/Fulltext/AN21229	middel
+F28	Van Bommel (via nieuwsartikel): 96% van blijvende gebruikers vond LGD effectief; 2–3 jaar tot volledig effectief; stoppen door blaffen, zwerven, vee lastigvallen [mening, enquête]	96	%	Australië	ONBEKEND	nieuwsartikel over onderzoek	Guardian dogs need to be trained properly (Farm Online)	https://farmonline.com.au/story/9211775/guardian-dogs-need-to-be-trained-properly-to-protect-sheep/	laag
+F29	Lama’s op pluimveebedrijven: predatie 40%→6% van de kudde; aankoop $532, onderhoud $135/jaar; roofdieren = canids, niet specifiek vos [schatting, zelfrapportage]	40→6	% predatie	VS	ONBEKEND	masterscriptie/enquête (136 ranchers)	The use of llamas to protect goats, cattle, and poultry from canid predators	https://dr.lib.iastate.edu/entities/publication/4f3f462c-1510-47f6-ae14-a658aac288c9/full	laag
+F30	Mobiele afschrikker (RC-auto + Foxlight): voorspelde overleving van aas binnen zone: baseline 4,3; alleen licht 9,6; vaste route 32,3; reagerend 214,7. Buiten zone: 1,4 / 1,4 / 2,5 / 80,3 [meting]	214,7 vs 4,3	minuten	VS (Utah, gevangen coyotes)	2023	peer-reviewed (CC BY)	Integrating robotics into wildlife conservation (Breck et al.)	https://peerj.com/articles/15491	middel
+F31	Zelfde studie: aas dat 60 min overleefde, binnen zone: 0/39 baseline, 5/39 licht, 12/21 vaste route, 15/18 reagerend; buiten zone: reagerend 11/18, andere 0 [meting]	15/18	aas overleefd	VS	2023	peer-reviewed	idem F30	https://peerj.com/articles/15491	middel
+F32	Beperkingen volgens auteurs: gevangen coyotes (geen vos), geen veldtest, geen gewenningsonderzoek, mens bestuurde de reagerende auto, geen bestaand autonoom systeem; kosten = grootste hindernis [mening auteurs]	n.v.t.	n.v.t.	VS	2023	peer-reviewed	idem F30	https://peerj.com/articles/15491	hoog
+F33	RobotFalcon joeg vogelzwermen weg, velden bleven uren vrij, geen gewenning waargenomen; vogels, geen zoogdieren [meting]	n.v.t.	n.v.t.	Nederland	2022	peer-reviewed	Deterrence of birds with an artificial predator, the RobotFalcon	https://research.rug.nl/en/publications/deterrence-of-birds-with-an-artificial-predator-the-robotfalcon/	hoog
+F34	Bittle X: batterij ~1 uur wandelen; niet waterdicht (fabrikant); draagt 1 lb; 200x110x110 mm; 9 servogewrichten [meting, fabrikantspec]	1 / 1 / 200	uur / lb / mm lang	wereldwijd	ONBEKEND	fabrikant + retailer	Petoi Bittle X FAQ; RobotShop-specs	https://www.petoi.com/products/bittle-x	hoog
+F35	Bittle X (geassembleerd) €328,90 incl. btw [prijs]	328,90	EUR	EU	2026	webshop	Bittle X Assembled (RobotShop EU)	https://eu.robotshop.com/products/bittle-x-open-source-voice-controlled-robot-dog-assembled	hoog
+F36	Handson kippengaas 50 cm x 5 m: €8,99, maaswijdte 25 mm, draad 0,8 mm, dus onder ANB-minimum van 1,5 mm [prijs]	8,99	EUR	België	2026	webshop	Handson kippengaas (Gamma.be)	https://www.gamma.be/nl/assortiment/handson-kippengaas-50-cm-x-5-m-verzinkt/p/B536834	hoog
+F37	Rapportauteur: vossen benaderen de bedrijven overdag niet (kippen ‘s nachts opgehokt) [mening]	n.v.t.	n.v.t.	Flevoland (NL)	2017	rapport (zie F5)	idem F5	zie F5	laag
+Vergelijking
+
+Het oordeel in de kolom “aanvulling door robot” is mijn eigen afleiding.
+
+oplossing	prijs	bewijs	zwakte	aanvulling door robot	bron	afbeelding
+Automatische hokdeur	€190 Omlet; €199 smart; €20–62 DE-budget; jaarlijks: batterijen, kosten ONBEKEND (Omlet: 3–4 mnd op 4 AA)	geen onafhankelijk onderzoek; enkel blog en webshop	deur kan falen (‘controleer regelmatig’); budgetdeur-vosbestendigheid ONBEKEND; nachthok moet zelf dicht zijn	nee	F3, F11–F15	I1, I2
+Schrikdraad(net)	net €159/50 m (BE) + apparaat/accu ONBEKEND; bestaand hek ~€250 (NL 2017)	in ANB-norm; verder rapport en bedrijfsclaim; geen meting bij kippen	stroom/accu, begroeiing; ANB eist ook mazen en ondergraafmaatregel	nee	F2, F7, F9, F10	I3, I5
+Ingegraven gaas/rok	€7/m materiaal; ~€30/m geplaatst (NL 2017); jaarlijks ~€0 (garantie 25 jaar volgens leverancier)	ANB-norm; ‘praktisch 100%’ (Natuurpunt, tweedehands)	arbeid; springplanken; diepte 30 vs 50 cm; kippengaas 0,8 mm te dun	nee	F1, F6, F8, F36	I3
+Volledig overdekte ren	ONBEKEND	ANB: meeste zekerheid; geen studie	kosten/ruimte; dak en bodem ook dicht; marter via ≥5 cm	nee (maakt robot overbodig)	F3, F4	I3
+Licht/geluid (Nite Guard, Foxlight, ultrasoon)	$27,99 (VS); BE/NL ONBEKEND	tegenstrijdig: F16 (aantrekker) vs F17 (effect, andere soort); ultrasoon gemengd; Nite Guard enkel claims	gewenning; geen bewijs voor kippen	deels (licht + beweging beter dan licht alleen, maar coyotes in gevangenschap)	F16–F21, F30	geen
+Camera met melding	€123 (NL); €159–365 (BE); abonnement €0–10/mnd; 8 AA per ~6 mnd	geen bewijs op predatie	enkel detectie, niemand kan ‘s nachts ingrijpen; dekking 4G	deels (robot kan niet melden zonder eigen camera/netwerk; ONBEKEND)	F22–F25	geen
+Robot/drone	Bittle X €328,90	enkel F30–F32 (captive coyotes) en F33 (vogels)	1 uur, niet waterdicht, 20 cm; geen veldtest	n.v.t.	F30–F35	I4
+Hond/lama/ezel	lama $532 + $135/jaar (VS); hond ONBEKEND	F26, F28, F29; ezel: geen bron	2–3 jaar training; blaffen/zwerven; kippenspecifiek bewijs schaars	deels (hypothese: reagerende beweging)	F26–F29	geen
+Zelf binnenbrengen	€0 aankoop; tijd ONBEKEND	geen studie; F37 vs F14 tegenstrijdig over schemer	vergeten, vakantie, schemeraanval	nee	F3, F14, F37	geen
+Afbeeldingen
+
+Ik vond geen product- of schemafoto’s met een geverifieerde vrije licentie. Zoek zelf op Wikimedia Commons of vraag toestemming bij de rechthebbende.
+
+id	wat het toont	image_url	pagina_url	licentie
+I1	Ghost Controls CKBT-deuropenerkit	https://img.wattagnet.com/files/base/wattglobalmedia/all/image/2018/03/an.Ghost-Controls-Coop-Controls-CKBT-Automatic-Coop-Door-Opener-Kit.jpg?auto=format%2Ccompress&q=70&w=400	https://wattagnet.com/WATTPoultry-Annual-Buyers-Guide/animal-bird-production/housing-fixed-equipment/product/15491653/ghost-controls-ckbt-automatic-coop-door-opener-kit	ONBEKEND; hergebruik niet zonder toestemming
+I2	Omlet Autodoor klantfoto’s	ONBEKEND	https://www.omlet.nl/reviews/omlets-automatische-deur/customer-images	ONBEKEND; hergebruik: waarschijnlijk niet
+I3	ANB-schema’s nachthok, omheining, elektrische omheining	ONBEKEND (PDF)	https://natuurenbos.vlaanderen.be/sites/default/files/documenten/vossen.pdf	© ANB; foto’s ©VildaPhoto (vermeld); hergebruik ONBEKEND
+I4	Breck 2023: figuur 1 (proefopstelling) en figuur 2 (overlevingscurves)	ONBEKEND	https://peerj.com/articles/15491	CC BY (versie niet in opgehaalde tekst); hergebruik ja, met bronvermelding
+I5	Gallagher-schema’s tegen vos	ONBEKEND (PDF)	https://gallagher.eu/media/87/44/a6/1732538769/NL_Whitepaper_Fox_2024.pdf	ONBEKEND; hergebruik niet zonder toestemming
+Hiaten
+Niet gevonden:
+Onafhankelijk onderzoek naar verliezen met automatische deuren, schrikdraad of camera’s bij hobbykippen.
+Peer-reviewed bewijs voor Nite Guard of sirenes met bewegingssensor.
+Studies naar drones of robots tegen vossen (alleen coyotes en vogels).
+BE/NL-prijzen voor Foxlight, Nite Guard, schrikdraadapparaat, waakhond of ezel.
+Prijs van een compleet gesloten ren.
+Kosten van batterijen per jaar.
+Afmetingen van vos en marter.
+Aandeel aanvallen in de schemer.
+Of schrikdraadnet voldoet aan de ANB-eisen.
+Prijzen: Welkoop-pagina’s toonden geen prijzen, dus geen NL-prijs voor kippennet.
+Zoektermen: automatische hokopener prijs; Omlet Autodoor prijs; automatisch kippenluik lichtsensor; vos kippen schrikdraad ingegraven gaas Natuur en Bos; Slimmer dan de vos; fox deterrent lights ultrasonic habituation; robot deterrent red fox; livestock guardian dogs poultry fox; llama donkey guard animals; Nite Guard effectiveness; Petoi Bittle X specs; wildcamera 4G prijs; steenmarter kippenhok maaswijdte.
+Beperking: ik las alleen delen van enkele bronnen (F26, F27, F29), geen volledige papers.

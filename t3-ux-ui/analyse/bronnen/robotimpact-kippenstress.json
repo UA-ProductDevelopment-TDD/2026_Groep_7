@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "bewering": "Vermijdingsafstand leghennen tot grondrobot",
+    "waarde": "109–131",
+    "eenheid": "cm (meting)",
+    "regio": "Noord-Amerika",
+    "jaar": 2018,
+    "bronsoort": "peer-reviewed",
+    "bron_titel": "Comparative evaluation of poultry avoidance distances to human vs. robotic vehicle",
+    "bron_url": "https://doi.org/10.13031/aim.201801041",
+    "zekerheid": "hoog"
+  },
+  {
+    "id": 2,
+    "bewering": "Vermijdingsafstand bruine vs. witte hennen tot robot",
+    "waarde": "Bruin: 114–131; Wit: 92–99",
+    "eenheid": "cm (meting)",
+    "regio": "Noord-Amerika",
+    "jaar": 2020,
+    "bronsoort": "peer-reviewed",
+    "bron_titel": "Comparative Evaluation of Poultry-Human and Poultry-Robot Avoidance Distances",
+    "bron_url": "https://doi.org/10.13031/trans.13600",
+    "zekerheid": "hoog"
+  },
+  {
+    "id": 3,
+    "bewering": "Geteste robotsnelheden in pluimveestallen",
+    "waarde": "0,2; 0,4; 0,6",
+    "eenheid": "m/s (meting)",
+    "regio": "Noord-Amerika",
+    "jaar": 2020,
+    "bronsoort": "peer-reviewed",
+    "bron_titel": "Comparative Evaluation of Poultry-Human and Poultry-Robot Avoidance Distances",
+    "bron_url": "https://doi.org/10.13031/trans.13600",
+    "zekerheid": "hoog"
+  },
+  {
+    "id": 4,
+    "bewering": "Habitatietijd van leghennen aan actieve grondrobot",
+    "waarde": "3 tot 7",
+    "eenheid": "dagen (meting)",
+    "regio": "Noord-Amerika",
+    "jaar": 2022,
+    "bronsoort": "peer-reviewed",
+    "bron_titel": "Effects of ground robot manipulation on hen floor egg reduction, production performance, stress response, bone quality, and behavior",
+    "bron_url": "https://doi.org/10.1371/journal.pone.0266432",
+    "zekerheid": "hoog"
+  },
+  {
+    "id": 5,
+    "bewering": "Akoestische stressdrempel (verhoging freezing, daling preening)",
+    "waarde": "85–95",
+    "eenheid": "dB (meting)",
+    "regio": "Azië",
+    "jaar": 2023,
+    "bronsoort": "peer-reviewed",
+    "bron_titel": "Effects of Different Auditory Environments on Behavior, Learning Ability, and Fearfulness in 4-Week-Old Laying Hen Chicks",
+    "bron_url": "https://doi.org/10.3390/ani13193026",
+    "zekerheid": "hoog"
+  },
+  {
+    "id": 6,
+    "bewering": "Rustgevend auditief niveau (daling corticosteron)",
+    "waarde": "65–75",
+    "eenheid": "dB (meting)",
+    "regio": "Azië",
+    "jaar": 2023,
+    "bronsoort": "peer-reviewed",
+    "bron_titel": "Effects of Different Auditory Environments on Behavior, Learning Ability, and Fearfulness in 4-Week-Old Laying Hen Chicks",
+    "bron_url": "https://doi.org/10.3390/ani13193026",
+    "zekerheid": "hoog"
+  },
+  {
+    "id": 7,
+    "bewering": "Afname van angstreactie na herhaalde blootstelling test",
+    "waarde": "66 naar 42",
+    "eenheid": "% reactie (meting)",
+    "regio": "Noord-Amerika",
+    "jaar": 2024,
+    "bronsoort": "peer-reviewed",
+    "bron_titel": "The impact of multiple exposures and movement on the fear response of poultry",
+    "bron_url": "https://doi.org/10.1016/j.psj.2024.104276",
+    "zekerheid": "hoog"
+  },
+  {
+    "id": 8,
+    "bewering": "Maximale duur tonische immobiliteit testprotocol",
+    "waarde": "600",
+    "eenheid": "s (meting)",
+    "regio": "Noord-Amerika",
+    "jaar": 2022,
+    "bronsoort": "peer-reviewed",
+    "bron_titel": "Light color and the commercial broiler: effect on behavior, fear, and stress",
+    "bron_url": "https://doi.org/10.1016/j.psj.2022.101968",
+    "zekerheid": "hoog"
+  },
+  {
+    "id": 9,
+    "bewering": "Typisch achtergrondgeluid en lichtsterkte testomgeving",
+    "waarde": "Geluid: 40–60 dB; Licht: 7 lux",
+    "eenheid": "dB / lux (meting)",
+    "regio": "Noordwest-Europa (NO/NL)",
+    "jaar": 2016,
+    "bronsoort": "peer-reviewed",
+    "bron_titel": "Exposure to Increased Environmental Complexity during Rearing Reduces Fearfulness and Increases Use of Three-Dimensional Space in Laying Hens",
+    "bron_url": "https://doi.org/10.3389/fvets.2016.00014",
+    "zekerheid": "hoog"
+  },
+  {
+    "id": 10,
+    "bewering": "Drempelwaarde flikkerf

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f4f3ed">
+<title>Bittle — tuinbeheer</title>
+<link rel="stylesheet" href="dashboard.css">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+<aside class="sidebar">
+<a class="brand" href="#overzicht">
+<span class="brand-mark">b</span>bittle<span class="brand-dot">.</span>
+</a>
+<div class="property">
+<span class="property-icon" data-icon="leaf">
+</span>
+<div>Mijn tuin<small>Landlicht</small>
+</div>
+<span class="property-dot">
+</span>
+</div>
+<div class="nav-label">WERKRUIMTE</div>
+<nav id="nav">
+</nav>
+<div class="sidebar-bottom">
+<span class="demo-dot">
+</span> Lokale simulatie <span class="version">01</span>
+</div>
+</aside>
+<main>
+<header class="page-header">
+<div>
+<div class="breadcrumb">Mijn tuin <span>/</span> <span id="crumb">Overzicht</span>
+</div>
+<h1 id="page-title">Overzicht</h1>
+</div>
+<div class="header-right">
+<span class="save-status" id="save-status">
+</span>
+<button class="stop-button" id="stop-button">
+<span data-icon="stop">
+</span> Stop Bittle</button>
+</div>
+</header>
+<div id="connection-notice" class="connection-notice" role="status" hidden>
+</div>
+<div id="page">
+</div>
+<footer>BITTLE / LANDLICHT <span>Simulatie · lokaal op deze computer</span>
+</footer>
+</main>
+<div class="toast" id="toast" role="status" hidden>
+</div>
+<input type="file" id="import-file" accept="application/json,.json" hidden>
+<dialog id="egg-dialog">
+<form method="dialog">
+<div class="dialog-head">
+<h2>Eieren in het nest</h2>
+<button class="icon-button" value="cancel" aria-label="Sluiten">×</button>
+</div>
+<label>Aantal <input type="number" id="egg-count" min="0" max="24" value="3">
+</label>
+<div class="dialog-actions">
+<button class="button" value="cancel">Annuleren</button>
+<button class="button primary" id="save-eggs" value="save">Opslaan</button>
+</div>
+</form>
+</dialog>
+<script src="core.js">
+</script>
+<script src="map-engine.js">
+</script>
+<script src="views.js">
+</script>
+<script src="local-client.js">
+</script>
+</body>
+</html>

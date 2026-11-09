@@ -1,0 +1,117 @@
+Gedrag en stressreacties van hennen bij robotinteractie
+Samenvatting
+Grondrobots induceren bij eerste blootstelling schrikreacties (samendrommen), maar hennen habitueren binnen 3 tot 7 dagen volledig zonder nadelige effecten op eierproductie of corticosterone 
+Li
+2022
+.
+Vermijdingsafstanden (avoidance distance) voor robots liggen bij leghennen tussen 92 en 131 cm, waarbij lagere rijsnelheden (0,2 m/s t.o.v. 0,6 m/s) de vluchtsnelheid en vluchtafstand bij witte stammen significant verlagen 
+Parajuli
+2020
+.
+Geluidsniveaus van 85–95 dB verhogen angstgedrag (freezing), remmen comfortgedrag en verlagen dopamine significant, terwijl omgevingsgeluid of muziek van 65–75 dB stressmetabolieten verlaagt 
+Zhao
+2023
+.
+Hennen vertonen genetische verschillen: bruine leghennen reageren actiever met ontwijkingsgedrag en hogere fysiologische stressindicatoren (corticosteron, heterofiel-lymfocietratio), terwijl witte stammen vaker passieve immobiliteit vertonen 
+Gulabrai
+2025
+Brown
+2022
+.
+Blauw monochromatisch LED-licht reduceert tonische immobiliteit en stressmarkers (H:L-ratio) en stimuleert rustgedrag in vergelijking met wit licht 
+Franco
+2022
+.
+De zwakste bronsoort is forum/blog (afwezig in deze academische synthese); alle onderstaande beweringen zijn peer-reviewed wetenschappelijke publicaties.
+Bevindingen
+id	bewering	waarde	eenheid	regio	jaar	bronsoort	bron_titel	bron_url	zekerheid
+1	Vermijdingsafstand leghennen tot grondrobot	109–131	cm (meting)	Noord-Amerika	2018	Peer-reviewed	Comparative evaluation of poultry avoidance distances to human vs. robotic vehicle	https://doi.org/10.13031/aim.201801041	Hoog
+2	Vermijdingsafstand bruine vs. witte hennen tot robot	Bruin: 114–131; Wit: 92–99	cm (meting)	Noord-Amerika	2020	Peer-reviewed	Comparative Evaluation of Poultry-Human and Poultry-Robot Avoidance Distances	https://doi.org/10.13031/trans.13600	Hoog
+3	Geteste robotsnelheden in pluimveestallen	0,2; 0,4; 0,6	m/s (meting)	Noord-Amerika	2020	Peer-reviewed	Comparative Evaluation of Poultry-Human and Poultry-Robot Avoidance Distances	https://doi.org/10.13031/trans.13600	Hoog
+4	Habitatietijd van leghennen aan actieve grondrobot	3 tot 7	dagen (meting)	Noord-Amerika	2022	Peer-reviewed	Effects of ground robot manipulation on hen floor egg reduction, production performance, stress response, bone quality, and behavior	https://doi.org/10.1371/journal.pone.0266432	Hoog
+5	Akoestische stressdrempel (verhoging freezing, daling preening)	85–95	dB (meting)	Azië	2023	Peer-reviewed	Effects of Different Auditory Environments on Behavior, Learning Ability, and Fearfulness in 4-Week-Old Laying Hen Chicks	https://doi.org/10.3390/ani13193026	Hoog
+6	Rustgevend auditief niveau (daling corticosteron)	65–75	dB (meting)	Azië	2023	Peer-reviewed	Effects of Different Auditory Environments on Behavior, Learning Ability, and Fearfulness in 4-Week-Old Laying Hen Chicks	https://doi.org/10.3390/ani13193026	Hoog
+7	Afname van angstreactie na herhaalde blootstelling test	66 naar 42	% reactie (meting)	Noord-Amerika	2024	Peer-reviewed	The impact of multiple exposures and movement on the fear response of poultry	https://doi.org/10.1016/j.psj.2024.104276	Hoog
+8	Maximale duur tonische immobiliteit testprotocol	600	s (meting)	Noord-Amerika	2022	Peer-reviewed	Light color and the commercial broiler: effect on behavior, fear, and stress	https://doi.org/10.1016/j.psj.2022.101968	Hoog
+9	Typisch achtergrondgeluid en lichtsterkte testomgeving	Geluid: 40–60 dB; Licht: 7 lux	dB / lux (meting)	Noordwest-Europa (NO/NL)	2016	Peer-reviewed	Exposure to Increased Environmental Complexity during Rearing Reduces Fearfulness and Increases Use of Three-Dimensional Space in Laying Hens	https://doi.org/10.3389/fvets.2016.00014	Hoog
+10	Drempelwaarde flikkerfrequentie zonder gedragsschade	30 tot 250	Hz (meting)	Noord-Amerika	2024	Peer-reviewed	How does visible light flicker impact laying hen pullet behavior, fear, and stress levels?	https://doi.org/10.1016/j.psj.2024.103554	Middel
+11	Afname eierproductie door grondrobot	0 (geen significant verschil)	% (meting)	Noord-Amerika	2022	Peer-reviewed	Effects of ground robot manipulation on hen floor egg reduction, production performance, stress response, bone quality, and behavior	https://doi.org/10.1371/journal.pone.0266432	Hoog
+12	Nachtelijke lichtgevoeligheid en isolatie-angst	Verhoogde 5-HT turnover bij licht t.o.v. donker	kwalitatief / neurochemisch (meting)	Noord-Amerika	2026	Peer-reviewed	Age differences in fear response of laying hens exposed to isolation test in light and dark environments	https://doi.org/10.1016/j.psj.2025.104618	Middel
+Figure 1 Overzicht van gekwantificeerde drempelwaarden en stressparameters bij pluimvee
+
+Afbeeldingen
+id	wat het toont	image_url	pagina_url	licentie
+1	Warmtebeeldmeting van kippenkop ter indicatie van acute stress	ONBEKEND	https://doi.org/10.1098/rsos.231362	CC BY 4.0 (Hergebruik toegestaan met bronvermelding)
+2	Interactie en habituatie van leghennen met een autonome grondrobot (Figuur 7)	https://journals.plos.org/plosone/article/figure/image?id=10.1371/journal.pone.0266432.g007&size=inline	https://doi.org/10.1371/journal.pone.0266432	CC BY 4.0 (Hergebruik toegestaan met bronvermelding)
+3	Vrijstaand gekleurd object voor Novel Object Test bij leghennen (Figuur 1)	ONBEKEND	https://doi.org/10.1016/j.psj.2025.105999	CC BY 4.0 (Hergebruik toegestaan met bronvermelding)
+Figure 2 Gevalideerde wetenschappelijke figuren uit open access publicaties over pluimveegedrag
+
+Hiaten
+Nachtelijke drempelwaarden rondom het buitenhok (lux/dB): Er ontbreken veldstudies in Vlaanderen of West-Europa die kwantitatief meten vanaf welke specifieke lux-waarde (nachtelijk strooilicht van buiten) of dB-waarde hennen op de nachtstok ontwaken of van hun zitstok vallen.
+Directe interactie met viervoetige looprobots (quadrupeds): Bestaande pluimveerobotica-studies gebruiken uitsluitend wiel- of rupsvoertuigen (bijv. Lynxmotion); dynamische pootbewegingen van mechanische robothonden zijn niet specifiek onderzocht.
+Zoektermen geprobeerd: "laying hens fear response robot", "poultry house robot welfare", "hen stress noise dB", "chicken fear drone", "hen night disturbance light", "tonic immobility predator".
+Ontwerpregels voor de robot
+5 Do's
+Beperk operationele rijsnelheid: Houd de rijsnelheid op of onder 0,2 m/s om de vluchtafstand en panieksnelheid van hennen significant te minimaliseren 
+Parajuli
+2020
+.
+Hanteer een vaste, dagelijkse patrouilleroutine: Laat de robot dagelijks op voorspelbare wijze opereren; herhaalde blootstelling halveert vermijdingsafstanden door snelle habituatie 
+Parajuli
+2020
+Li
+2022
+Jackson
+2024
+.
+Beperk geluidsproductie tot < 65–70 dB: Houd motorgeluid en mechanisch geklik van de servomotoren binnen 65–75 dB; vermijd pieken boven 85 dB die paniekbevriezing veroorzaken 
+Parajuli
+2018
+Zhao
+2023
+.
+Gebruik gedimd blauw of infrarood licht voor nachtzicht: Rust de robot uit met monochrome blauwe LED's of niet-zichtbaar infraroodlicht om slaapverstoring en stressreacties (lagere H:L-ratio en immobiliteit) te waarborgen 
+Franco
+2022
+McPhee
+2024
+.
+Respecteer de buitencontour (bufferzone > 1,5 m): Houd de patrouillebaan op minstens 130–150 cm van gaas of kieren van het hok, overeenkomend met de maximale vermijdingsafstand voor niet-gehabitueerde hennen 
+Parajuli
+2018
+Parajuli
+2020
+.
+5 Don'ts
+Vermijd abrupte versnellingen en plotse stops: Maak geen schokkerige bewegingen direct nabij het kippenzicht; plotse bewegingen triggeren acute alarm- en waakzaamheidsresponsen 
+Parajuli
+2018
+Campbell
+2022
+Jackson
+2024
+.
+Geen wit flitslicht of felle bundels in het nachthok richten: Richt geen gerichte koplampen direct door kieren of ramen op slapende vogels; verstoring van de donkere periode verhoogt angst en neurochemische stressactiviteit 
+Franco
+2022
+Von Seggern
+2026
+.
+Geen ultrasone of snerpende aandrijffrequenties: Gebruik geen luidruchtige ongeïsoleerde tandwielkasten; servogeluiden fungeren als waarschuwingsprikkels die hennen alarmeren 
+Parajuli
+2018
+Zhao
+2023
+.
+Geen silhouet boven ooghoogte werpen (vermijd schaduwwerking): Zorg dat de robot laag bij de grond blijft en werp geen verhoogde schaduwen die lijken op luchtroofdieren, wat langdurige tonische immobiliteit uitlokt 
+Franco
+2022
+Oyeniran
+2025
+.
+Niet patrouilleren met onregelmatige intervallen in de eerste week: Voorkom dat de robot de eerste dagen willekeurig verschijnt en verdwijnt; onvoorspelbaarheid verhindert gewenning en verlengt angstgedrag 
+Li
+2022
+Jackson
+2024
+.

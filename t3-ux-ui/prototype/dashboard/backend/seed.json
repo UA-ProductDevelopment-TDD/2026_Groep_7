@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "objects": [
+    {
+      "id": "coop",
+      "type": "coop",
+      "name": "Kippenhok",
+      "x": 510,
+      "y": 290,
+      "w": 150,
+      "h": 105,
+      "rotation": 0
+    },
+    {
+      "id": "nest",
+      "type": "nest",
+      "name": "Legnest",
+      "x": 403,
+      "y": 305,
+      "w": 40,
+      "h": 35,
+      "rotation": 0
+    },
+    {
+      "id": "water",
+      "type": "water",
+      "name": "Drinkbak",
+      "x": 630,
+      "y": 360,
+      "w": 40,
+      "h": 40,
+      "rotation": 0
+    },
+    {
+      "id": "door",
+      "type": "door",
+      "name": "Hokdeur",
+      "x": 510,
+      "y": 350,
+      "w": 52,
+      "h": 12,
+      "rotation": 0
+    },
+    {
+      "id": "dock",
+      "type": "dock",
+      "name": "Dock",
+      "x": 170,
+      "y": 475,
+      "w": 54,
+      "h": 42,
+      "rotation": 0
+    },
+    {
+      "id": "plant1",
+      "type": "plant",
+      "name": "Appelboom",
+      "x": 190,
+      "y": 150,
+      "w": 100,
+      "h": 100,
+      "rotation": 0
+    },
+    {
+      "id": "plant2",
+      "type": "plant",
+      "name": "Hortensia",
+      "x": 780,
+      "y": 430,
+      "w": 75,
+      "h": 75,
+      "rotation": 20
+    },
+    {
+      "id": "plant3",
+      "type": "plant",
+      "name": "Kruiden",
+      "x": 770,
+      "y": 160,
+      "w": 65,
+      "h": 65,
+      "rotation": 0
+    },
+    {
+      "id": "fence1",
+      "type": "fence",
+      "name": "Omheining",
+      "x": 510,
+      "y": 160,
+      "w": 270,
+      "h": 10,
+      "rotation": 0
+    }
+  ],
+  "routes": [
+    {
+      "id": "round",
+      "name": "Rond het hok",
+      "closed": true,
+      "points": [
+        {
+          "x": 320,
+          "y": 220
+        },
+        {
+          "x": 350,
+          "y": 125
+        },
+        {
+          "x": 670,
+          "y": 125
+        },
+        {
+          "x": 710,
+          "y": 245
+        },
+        {
+          "x": 710,
+          "y": 440
+        },
+        {
+          "x": 460,
+          "y": 470
+        },
+        {
+          "x": 300,
+          "y": 420
+        }
+      ]
+    }
+  ],
+  "zones": [],
+  "eggs": 3,
+  "eggTime": 1793545537277,
+  "doorTime": 1793546437277
+}

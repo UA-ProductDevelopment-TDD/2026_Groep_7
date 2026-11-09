@@ -1,0 +1,90 @@
+Samenvatting
+Stijlregels in Git: CLAUDE.md bevat commando’s en stijlregels die afwijken van de standaard. Cursor-rules staan in .cursor/rules en zijn versiebeheerd. DESIGN.md is een Apache-2.0-spec in alpha met tokens plus uitleg. Lovable/Bolt-knowledge staat in projectinstellingen; Git-export ONBEKEND. (F2, F5, F11, F13, F14) 
+Best Practices for Claude Code
+ +2
+Componenten eerst: v0 gebruikt shadcn/ui als standaard en kan door aangepaste primitives onverwachte output geven. De shadcn-MCP laat agents componenten zoeken en installeren. (F9, F10) 
+v0
+shadcn
+Referentiebeeld: screenshot plakken, resultaat laten screenshotten, verschillen laten fixen. Peer-reviewed: modellen missen vooral visuele elementen en layout, dus menselijke review blijft nodig. (F1, F16) 
+claude
+aclanthology
+AI-look: Inter, paarse gradiënt, voorspelbare layouts. Anthropic noemt het “distributional convergence” (verklaring, geen meting). Tegenmiddel: ontwerpbriefje, verboden-lijst, spacing-schaal. Onafhankelijke effectmeting: ONBEKEND; het enige cijfer (+149,98%) is een eigen benchmark van een toolmaker. (F3, F8, F17–F20) 
+claude
+github
+Zonder robot: MSW mockt WebSocket. MQTT-over-WebSocket kan via een lokale broker plus mqtt.js (F29). Bittle praat serieel. Web Serial werkt alleen in Chrome/Edge desktop. Eigen ontwerp: één RobotAdapter met MockRobot en SerialRobot. (F28–F31) 
+- Introduction
+ +2
+Stack: Tailwind Play CDN is alleen voor ontwikkeling. Alpine-grootte is tegenstrijdig (4–17 KB). Vite bouwt naar een statische dist/. Eigen afweging: HTML+Alpine tot ±3 schermen, anders Vite+framework; alles lokaal bundelen voor offline gebruik. (F32–F35) 
+tailwindcss
+vite
+Repos (MIT): shadcn-admin, next-shadcn-dashboard-starter (Clerk nodig), awesome-design-md. Aantoonbaar AI-gebouwd: geen gevonden. (F22–F27)
+Bronkwaliteit: zwakst zijn blogs, dev.to, gists en spiegels; sterkst is Design2Code. Officiële instantie: geen.
+
+Stappenplan (eigen synthese, één PR per stap):
+
+Moodboard: 3–5 beelden plus trefwoorden (beschrijf-prompt).
+DESIGN.md met tokens en verboden-lijst (extractie-prompt).
+CLAUDE.md (regelset-prompt).
+Vite, Tailwind en shadcn opzetten (setup-prompt).
+Event-schema plus RobotAdapter (schema-prompt).
+MockRobot-scenario’s (simulator-prompt).
+Eerste scherm uit beeld (beeld- en screenshotvergelijk-prompt).
+Overige schermen, één component per prompt (atomaire prompt).
+Audit op tokens, mobiel en contrast (review-prompt).
+Offline build, Serial/MQTT-adapter, test op Bittle (integratie-prompt).
+Bevindingen
+id	bewering	waarde	eenheid	regio	jaar	bronsoort	bron_titel	bron_url	zekerheid
+F1	Geef de agent een verificatiestap voor UI: ontwerp-screenshot plakken, resultaat laten screenshotten, vergelijken en verschillen oplossen	n.v.t. (aanbeveling)	n.v.t.	globaal	ONBEKEND	bedrijf (vendor-docs)	Best practices for Claude Code	https://code.claude.com/docs/en/best-practices.md	hoog
+F2	CLAUDE.md hoort commando’s, afwijkende stijlregels en testinstructies te bevatten, niet wat uit de code af te leiden is; incidentele domeinkennis hoort in skills	n.v.t. (aanbeveling)	n.v.t.	globaal	ONBEKEND	bedrijf (vendor-docs, gelezen via spiegel claude-wiki.com)	Best practices for Claude Code	https://code.claude.com/docs/en/best-practices.md	middel
+F3	Zonder sturing kiest een LLM vaak Inter, paarse gradiënten op wit, voorspelbare layouts en weinig animatie; Anthropic noemt dit distributional convergence	n.v.t. (verklaring/mening, niet gemeten)	n.v.t.	globaal	2025	bedrijf (Anthropic)	Improving frontend design through Skills	https://claude.com/blog/improving-frontend-design-through-skills	middel
+F4	De frontend-design-skill installeer je met /plugin marketplace add anthropics/claude-code en /plugin install frontend-design@claude-code-plugins	n.v.t.	n.v.t.	globaal	ONBEKEND	forum/blog	What is the Frontend Design Skill in Claude Code	https://claudelog.com/faqs/what-is-frontend-design-skill-in-claude-code/	middel
+F5	DESIGN.md is een open specificatie (Apache-2.0, alpha) die tokens in YAML combineert met uitleg in markdown	n.v.t.	n.v.t.	globaal	2026	forum/blog	DESIGN.md Specification	https://www.dsebastien.net/design-md-specification/	middel
+F6	De CLI @google/design.md controleert structuur en WCAG-contrast en exporteert naar Tailwind en DTCG	n.v.t.	n.v.t.	globaal	2026	bedrijf (third-party skill-doc)	Design Md (Hermes Agent skill)	https://hermes-agent.nousresearch.com/docs/user-guide/skills/bundled/creative/creative-design-md	middel
+F7	Beperkingen van DESIGN.md: drift ten opzichte van het echte designsysteem en geen automatische controle dat code de file volgt	n.v.t. (mening)	n.v.t.	globaal	2026	forum/blog	DESIGN.md: The File That Turns AI Agents Into Designers	https://noqta.tn/en/blog/design-md-systeme-design-agents-ia-markdown-2026	laag
+F8	Toolmaker meldt +149,98% token-conformiteit met een lint-laag bovenop DESIGN.md (eigen benchmark, niet onafhankelijk herhaald)	149,98 (meting door maker)	% relatief, token-conformiteit	n.v.t.	2026	bedrijf (GitHub-repo)	atelier-oss/atelier	https://github.com/atelier-oss/atelier	laag
+F9	De shadcn-MCP laat AI-assistenten componenten uit registries zoeken en installeren; config staat in .mcp.json (Claude Code) of .cursor/mcp.json (Cursor)	n.v.t.	n.v.t.	globaal	ONBEKEND	bedrijf (project-docs)	MCP Server (shadcn/ui)	https://ui.shadcn.com/docs/mcp	hoog
+F10	v0 gebruikt standaard shadcn/ui, ondersteunt tailwind-config en globals.css, en kan bij aangepaste shadcn-primitives onverwacht genereren. Pagina is gemarkeerd als legacy	n.v.t.	n.v.t.	globaal	ONBEKEND	bedrijf (vendor-docs, gelezen via spiegel logo.v0.build)	Design systems (v0)	https://v0.app/docs/design-systems	middel
+F11	Lovable stuurt het Knowledge-bestand bij elke prompt mee; zet daar ontwerpsysteem en UI-richtlijnen in en bewaar stijlkernwoorden	n.v.t. (aanbeveling)	n.v.t.	globaal	ONBEKEND	bedrijf (vendor-docs)	Lovable best practice	https://docs.lovable.dev/tips-tricks/best-practice	hoog
+F12	Lovable: werk in kleine stappen en upload een beeld met de opdracht de stijl te evenaren	n.v.t. (aanbeveling)	n.v.t.	globaal	ONBEKEND	bedrijf (vendor-docs)	Prompting 1.1 (Lovable)	https://docs.lovable.dev/tips-tricks/prompting-one	hoog
+F13	Bolt-knowledge (account, project, team) stel je in via instellingen; of dat naar Git geëxporteerd kan worden: ONBEKEND	n.v.t.	n.v.t.	globaal	ONBEKEND	bedrijf (vendor-docs)	Prompt effectively (Bolt)	https://support.bolt.new/prompting/prompting-effectively.md	hoog
+F14	Cursor-projectregels staan in .cursor/rules en zijn versiebeheerd; .mdc is vereist (platte .md wordt genegeerd); houd een rule onder 500 regels	500 (aanbeveling)	regels per rule	globaal	ONBEKEND	bedrijf (vendor-docs)	Rules (Cursor)	https://cursor.com/docs/rules	hoog
+F15	Cursor leest een CLAUDE.md in de projectroot op dezelfde manier als AGENTS.md	n.v.t.	n.v.t.	globaal	ONBEKEND	bedrijf (vendor-docs)	Rules (Cursor help)	https://cursor.com/help/customization/rules.md	hoog
+F16	Design2Code (NAACL 2025): 484 echte webpagina’s als testset; modellen schieten vooral tekort in het onthouden van visuele elementen en correcte layout	484 (testset)	webpagina’s	globaal	2025	peer-reviewed	Design2Code: Benchmarking Multimodal Code Generation for Automated Front-End Engineering	https://arxiv.org/abs/2403.03163v3	hoog
+F17	Veelgenoemde AI-look: Inter/Roboto, paarse of teal gradiënten, gestapelde ronde kaarten, geen visuele hiërarchie	n.v.t. (mening)	n.v.t.	globaal	ONBEKEND	forum/blog	The Prompts That Force AI to Give You Beautiful Frontend Design	https://medium.com/@okyerevansjohn/the-prompts-that-force-ai-to-give-you-beautiful-frontend-design-and-why-most-builders-skip-them-00f1348aeb63	laag
+F18	Ook gemeld: kaarten in kaarten en grijze tekst op gekleurde achtergrond	n.v.t. (mening)	n.v.t.	globaal	2026	forum/blog	impeccable (design skill)	https://notes.billmill.org/AI/claude/skills/impeccable__design_skill_.html	laag
+F19	Gemelde problemen: kapotte mobiele layouts en instructies die in UI-tekst lekken	n.v.t. (mening)	n.v.t.	globaal	ONBEKEND	bedrijf/webshop	Claude Code design (open-design.ai)	https://open-design.ai/agents/claude-code-design/	laag
+F20	Een gedefinieerde spacing-schaal in DESIGN.md maakt AI-UI coherenter; zonder regels neigen agents naar te grote koppen en dramatische spacing	n.v.t. (mening)	n.v.t.	globaal	ONBEKEND	forum/blog (repo-README)	DESIGN.md for AI UI Agents	https://github.com/VoltAgent/design-md	laag
+F21	Dashboardworkflow: eerst datavorm, dan componenten, state en grafieken	n.v.t. (aanbeveling)	n.v.t.	globaal	2026	forum/blog	Build a React Dashboard with Claude Code	https://phosailabs.com/blog/build-react-dashboard-with-claude-code	laag
+F22	shadcn-admin: MIT, Vite plus shadcn/ui, 10+ pagina’s, light/dark; 12.630 sterren per 2026-06-16; niet vermeld als AI-gebouwd	12630 (meting, blog)	sterren	globaal	2026	bedrijf/webshop (GitHub-repo plus blog)	satnaing/shadcn-admin	https://github.com/satnaing/shadcn-admin	hoog (MIT), middel (sterren)
+F23	Tegenstrijdig: de README noemt React Router, een andere README-versie TanStack Router (waarschijnlijk versieverschil, niet geverifieerd)	React Router / TanStack Router	n.v.t.	globaal	ONBEKEND	forum/blog (README-kopieën)	shadcn-admin README	https://github.com/satnaing/shadcn-admin	laag
+F24	next-shadcn-dashboard-starter: MIT, Next.js 16 en shadcn/ui, Clerk-auth voorgeconfigureerd (account/sleutels nodig, dus lastig offline); 6.217 sterren per 2026-04-05	6217 (meting, aggregator)	sterren	globaal	2026	bedrijf/webshop (repo plus aggregator)	Kiranism/next-shadcn-dashboard-starter	https://github.com/Kiranism/next-shadcn-dashboard-starter	middel
+F25	awesome-design-md (VoltAgent): MIT; DESIGN.md-bestanden uit publieke sites; geen eigendomsclaim op de merkidentiteit	n.v.t.	n.v.t.	globaal	2026	forum/blog (aggregator)	awesome-design-md by VoltAgent	https://www.sourcepulse.org/projects/27256155	middel
+F26	Tegenstrijdig: sterren awesome-design-md: 5.892 (datum ONBEKEND), 40.700 (10 dagen na lancering), 102.312 (2026-09-16)	5892 / 40700 / 102312 (meting, verschillende momenten)	sterren	globaal	2026	forum/blog	Brightcoding / Emelia / SourcePulse	https://blog.brightcoding.dev/2026/09/16/voltagentawesome-design-md-designmd-files-for-ai-ui-generation	laag
+F27	claude-visual-style-guide: referentie met CLAUDE.md, componentspecs, shadcn/ui en Tailwind; licentie ONBEKEND	n.v.t.	n.v.t.	globaal	ONBEKEND	bedrijf/webshop (GitHub-repo)	jcmrs/claude-visual-style-guide	https://github.com/jcmrs/claude-visual-style-guide	laag
+F28	MSW mockt WebSocket met ws.link; in de browser gebeurt dat via patching, niet via de Service Worker	n.v.t.	n.v.t.	globaal	ONBEKEND	bedrijf (project-docs)	Mocking WebSocket (MSW)	https://mswjs.io/docs/websocket/	hoog
+F29	Mosquitto ondersteunt MQTT-over-WebSocket via een listener met protocol websockets (voorbeeld poort 8080); mqtt.js werkt in browser en Node. Officiële Mosquitto-docs: ONBEKEND	8080 (voorbeeld)	poortnummer	globaal	ONBEKEND	bedrijf/webshop (Cedalo-blog plus cursusrepo)	Enabling WebSockets over MQTT with Mosquitto	https://cedalo.com/blog/enabling-websockets-over-mqtt-with-mosquitto	middel
+F30	Petoi: de Bluetooth-module geeft seriële data transparant door; de Python-app vereist pyserial; BiBoard koppel je via de naam met _BLE	n.v.t.	n.v.t.	globaal	ONBEKEND	bedrijf (vendor-docs)	Dual Mode Bluetooth (Petoi)	https://docs.petoi.com/communication-modules/dual-mode-bluetooth	hoog
+F31	Web Serial: Chrome/Edge 89, Opera 75; niet in Firefox of Safari; alleen HTTPS-context	89 (Chrome/Edge-versie)	browserversie	globaal	2025	forum/blog (spiegel van MDN)	Web Serial API (W3cubDocs)	https://docs.w3cub.com/dom/web_serial_api	middel
+F32	Tailwind Play CDN is alleen voor ontwikkeling; het voorbeeld laadt een script van jsDelivr (offline dus lokale kopie nodig: eigen inferentie)	n.v.t.	n.v.t.	globaal	ONBEKEND	bedrijf (vendor-docs)	Play CDN (Tailwind CSS)	https://tailwindcss.com/docs/installation/play-cdn	hoog
+F33	Tegenstrijdig: Alpine.js zonder buildstap; grootte ±4 KB, 14 KB, <15 KB, 15 KB, 17 KB (gzip, bronnen verschillen)	4 / 14 / <15 / 15 / 17 (schattingen)	KB gzip	globaal	ONBEKEND	forum/blog	Alpine.js (dev.to, LogRocket, Builder.io)	https://dev.to/0012303/alpinejs-has-a-free-api-you-should-know-about-5bbe	laag
+F34	Alpine is niet bedoeld ter vervanging van Vue/React voor sterk interactieve apps	n.v.t. (mening)	n.v.t.	globaal	2022	forum/blog	Getting started with Alpine (LogRocket)	https://blog.logrocket.com/getting-started-alpine	laag
+F35	Vite: npm run build levert dist/ op, statisch te hosten; GitHub Pages vereist een workflow wegens de buildstap	n.v.t.	n.v.t.	globaal	ONBEKEND	bedrijf (project-docs)	Deploying a Static Site (Vite)	https://vite.dev/guide/static-deploy.html	hoog 
+> ## Documentation Index
+ +50
+Afbeeldingen
+id	wat het toont	image_url	pagina_url	licentie
+A1	Preview van shadcn-admin (dashboard)	ONBEKEND	https://shadcn.io/template/satnaing-shadcn-admin	Code MIT; licentie van beelden ONBEKEND. Hergebruik niet bevestigd, maak eigen screenshots
+A2	Live demo next-shadcn-dashboard-starter	ONBEKEND	https://shadcn-dashboard.kiranism.dev	Code MIT; licentie van beelden ONBEKEND. Hergebruik niet bevestigd
+A3	preview.html-voorbeelden per site (awesome-design-md)	ONBEKEND	https://github.com/VoltAgent/awesome-design-md	Repo MIT; merkidentiteit blijft van de bedrijven. Hergebruik van merkbeelden niet bevestigd
+Hiaten
+Effect van DESIGN.md/tokens/CLAUDE.md: geen onafhankelijk onderzoek gevonden; alleen vendor-claims en blogs.
+AI-gebouwde dashboards: geen repo gevonden waarvan de README AI-gebouwd vermeldt én met aantoonbaar goede visuele kwaliteit. F22, F24 en F25 zijn wel goede voorbeelden, maar niet als AI-gebouwd bevestigd.
+Google DESIGN.md: de primaire Google/Stitch-spec en de repo google-labs-code/design.md zelf niet geopend, alleen via derden.
+v0, Lovable, Bolt: v0 “Design Systems 2.0” niet gelezen. De Git-sync van v0, Lovable en Bolt niet onderzocht, en of Bolt-knowledge naar Git kan: ONBEKEND.
+MQTT: officiële Mosquitto- en mqtt.js-documentatie niet geopend. De mqtt.js-bronnen waren forks of voorbeeldrepo’s.
+Bittle X: native Wi-Fi of MQTT-ondersteuning voor BiBoard ONBEKEND.
+Web Serial: de browsertabel komt uit een spiegel uit 2025; actuele MDN niet geopend.
+Niet onderzocht: service worker en PWA voor offline gebruik, grafiekbibliotheken, Git-conventies voor review van AI-wijzigingen.
+Afbeeldingen: geen directe image-URL’s of licenties geverifieerd.
+Regio: Vlaanderen/België, NL en Noordwest-Europa zijn niet relevant voor dit technische onderwerp; alle bronnen zijn globaal.
+Zoektermen: Claude Code best practices CLAUDE.md · code.claude.com best practices verify UI screenshot · Anthropic improving frontend design Skills distributional convergence · DESIGN.md AI coding agents design tokens · google-labs-code design.md license · shadcn/ui MCP registry · Lovable knowledge design system · v0 docs design systems registry · Cursor rules .cursor/rules AGENTS.md · Bolt.new prompting project knowledge · satnaing shadcn-admin MIT · VoltAgent awesome-design-md · mqtt.js browser WebSocket Mosquitto · MSW WebSocket ws.link · Petoi Bittle X serial protocol · MDN Web Serial compatibility · Alpine.js no build step · Tailwind Play CDN production · Design2Code NAACL 2025 · “built with Claude Code” dashboard · Kiranism next-shadcn-dashboard-starter · vite static deploy.

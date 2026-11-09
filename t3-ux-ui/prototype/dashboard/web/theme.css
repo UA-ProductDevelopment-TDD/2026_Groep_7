@@ -1,0 +1,50 @@
+/* Begin hier voor snelle stijlproeven. Opslaan = direct zichtbaar in de browser.
+   Deze instellingen wijzigen alleen de presentatie, niet de simulator. */
+:root {
+  --page-background: #f5f5ef;
+  --sidebar-background: #eeefe6;
+  --surface-background: #fcfcf7;
+  --text-color: #29382c;
+  --accent-color: #40563c;
+  --panel-radius: 14px;
+  --heading-size: 32px;
+  --ui-font: Landlight, 'Segoe UI', sans-serif;
+}
+
+body {
+  background: var(--page-background);
+  color: var(--text-color);
+  font-family: var(--ui-font);
+}
+
+.sidebar {
+  background: var(--sidebar-background);
+}
+
+.panel,
+.summary,
+.quick-card,
+.inspector,
+.object-library {
+  background: var(--surface-background);
+  border-radius: var(--panel-radius);
+}
+
+.robot-summary {
+  background: linear-gradient(130deg, #f4f6ec, #edf2e2);
+}
+
+nav a.active,
+.button.primary {
+  background: var(--accent-color);
+}
+
+h1 {
+  font-size: var(--heading-size);
+}
+
+@media (max-width: 620px) {
+  h1 {
+    font-size: calc(var(--heading-size) - 5px);
+  }
+}
