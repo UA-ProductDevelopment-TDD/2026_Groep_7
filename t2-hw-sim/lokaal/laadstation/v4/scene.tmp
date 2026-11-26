@@ -1,0 +1,13 @@
+module scene(){
+ translate([0,0,-railbodem-3.2])draaiplaat();
+ translate([0,pivot_y,0])rotate([0,0,draaihoek])translate([0,-pivot_y,0]){
+ color("lightgrey")railvoet();
+ translate([0,railstand,0]){
+ color("seagreen")dockkop(); color("orange")translate([4.3,pin_y,5.8])rotate([180,0,0])borgpen();
+ translate([0,-opening-plaat,0]){color("wheat")robot();
+ for(s=[-1,1]) color("peru")translate([s*px,plaat-6.1,pz])rotate([-90,0,0])paspen();
+ if(toon_batterij)translate([0,0,4.7379999999999995])rotate([90,0,0])translate([0,12.2084,39.302845])for(f=["Case","Lid","Track"])color(f=="Track"?"orange":"lightblue",.32)import(str(stlmap,"Bittle_Battery",f,".stl"));}
+ for(s=[-1,1])for(j=[0,1])for(yy=[.15+4*j,-opening-magdiepte+4*j])color("silver")translate([s*mx,yy,mz])rotate([-90,0,0])cylinder(h=4,r=3);
+ // Gebruikersmaten USB-omhulling, nominale insteekslag 6 mm
+ color("gray",.6)translate([-4.125,-plaat-usbslag,usb-1.2])cube([8.25,7,2.4]);color("black",.45)translate([-5,-plaat-usbslag+7,usb-3])cube([10,18,6]);
+ } } }
