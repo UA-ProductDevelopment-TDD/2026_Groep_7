@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bittle Platform</title>
+<link rel="icon" type="image/svg+xml" href="/web/icon.svg">
+<link rel="stylesheet" href="/web/platform/platform.css">
+<link rel="stylesheet" href="/web/platform/map.css">
+<script type="importmap">{"imports":{"three":"/vendor/build/three.module.js","three/addons/":"/vendor/examples/jsm/"}}</script>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="brand-mark" aria-hidden="true">B</span><span>Bittle Platform</span></div>
+
+  <div class="group" role="group" aria-label="Robot">
+    <span class="dot" id="robotDot" aria-hidden="true"></span>
+    <span class="label">Robot</span>
+    <button type="button" id="connectBle" class="primary" title="Verbinden via Bluetooth (Chrome of Edge)">Bluetooth</button>
+    <button type="button" id="connectUsb" title="Verbinden via de USB-kabel">USB</button>
+    <button type="button" id="connectTest" title="Oefenen zonder robot: commando's verschijnen alleen in het logboek">Test</button>
+    <button type="button" id="disconnect" hidden>Verbreek</button>
+    <span class="status" id="robotStatus" role="status">Niet verbonden</span>
+  </div>
+
+  <div class="group" role="group" aria-label="Model">
+    <label class="label" for="modelSelect">Model</label>
+    <select id="modelSelect"></select>
+    <label class="check" title="Elke beweging van de 3D-robot gaat ook naar de echte robot"><input type="checkbox" id="followBox" checked> Robot volgt de 3D-robot</label>
+  </div>
+
+  <div class="group" role="group" aria-label="Camera">
+    <span class="dot" id="cameraDot" aria-hidden="true"></span>
+    <span class="label">Camera</span>
+    <span class="status" id="cameraBadge">uit</span>
+  </div>
+</header>
+
+<main class="layout">
+  <section class="card map-card" aria-label="Kaart">
+    <h2>Kaart van de omgeving</h2>
+    <div id="mapPanel" class="map-host"></div>
+  </section>
+
+  <section class="card camera-card" aria-label="Camera">
+    <div class="card-head">
+      <h2>Camera</h2>
+      <div class="inline">
+        <select id="cameraPort" aria-label="Poort van het camerabordje"></select>
+        <input id="cameraHost" type="text" size="18" spellcheck="false" placeholder="bittle-camera.local" aria-label="Adres van de wifi-camera" title="Adres van de wifi-camera: bittle-camera.local of het IP-adres op de statuspagina van de camera" hidden>
+        <select id="cameraResolution" aria-label="Beeldgrootte">
+          <option value="240">240×240 (vlot)</option>
+          <option value="480">480×480</option>
+          <option value="640">640×480 (traag)</option>
+        </select>
+        <button type="button" id="cameraConnect" class="primary">Verbind</button>
+        <button type="button" id="cameraDisconnect" hidden>Verbreek</button>
+        <button type="button" id="cameraRefresh" class="icon" title="Poorten opnieuw zoeken" aria-label="Poorten opnieuw zoeken">⟳</button>
+      </div>
+    </div>
+    <div class="camera-view" id="cameraView">
+      <img id="cameraImage" alt="Live camerabeeld" hidden>
+      <canvas id="cameraBoxes" aria-hidden="true"></canvas>
+      <div class="camera-empty" id="cameraEmpty"></div>
+      <div class="camera-distance" id="cameraDistance" title="Afstand gemeten door de SRF05 op de camera" hidden></div>
+    </div>
+    <p class="note" id="cameraInfo" role="status"></p>
+  </section>
+
+  <section class="card twin-card" aria-label="3D-robot">
+    <div class="card-head">
+      <h2>3D-robot</h2>
+      <span class="note" id="twinInfo"></span>
+      <div class="inline">
+        <label class="check" title="De gescande foto's in 3D rond de robot"><input type="checkbox" id="surroundingsBox" checked> Omgeving</label>
+        <button type="button" id="lookAround" title="Uitzoomen om de omgeving te zien">Overzicht</button>
+      </div>
+    </div>
+    <div class="twin-view" id="twinView"><div class="overlay" id="twinOverlay">3D-model laden…</div></div>
+  </section>
+
+  <aside class="card side" aria-label="Besturing">
+    <div class="tabs" role="tablist" id="tabList">
+      <button type="button" role="tab" data-tab="drive" aria-selected="true">Besturen</button>
+      <button type="button" role="tab" data-tab="scan" aria-selected="false" tabindex="-1">Scannen</button>
+      <button type="button" role="tab" data-tab="motions" aria-selected="false" tabindex="-1">Bewegingen</button>
+      <button type="button" role="tab" data-tab="motors" aria-selected="false" tabindex="-1">Motoren</button>
+      <button type="button" role="tab" data-tab="log" aria-selected="false" tabindex="-1">Logboek</button>
+    </div>
+    <div role="tabpanel" data-tab="drive" id="drivePanel"></div>
+    <div role="tabpanel" data-tab="scan" id="scanPanel" hidden></div>
+    <div role="tabpanel" data-tab="motions" id="motionsPanel" hidden></div>
+    <div role="tabpanel" data-tab="motors" id="motorsPanel" hidden></div>
+    <div role="tabpanel" data-tab="log" id="logPanel" hidden></div>
+  </aside>
+</main>
+
+<div id="toast" role="status" aria-live="polite"></div>
+<script type="module" src="/web/platform/main.js"></script>
+</body>
+</html>

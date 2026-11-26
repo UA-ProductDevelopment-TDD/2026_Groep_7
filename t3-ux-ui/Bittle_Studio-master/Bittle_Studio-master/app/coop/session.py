@@ -333,14 +333,7 @@ class CoopSession:
                     if speed:
                         budget = min(budget + elapsed * speed, .25)  # never try to catch up more than 0.25 s
                     while self.running and (budget >= dt if speed else True) and time.perf_counter() < deadline:
-                        try:
-                            self.tick()
-                        except (ValueError, p.error) as error:
-                            self.set_running(False)
-                            self.robot.skill = None
-                            budget = 0.
-                            self.log(f'Simulation paused: {error}. Adjust the settings and press Reset before restarting.')
-                            break
+                        self.tick()
                         sim_counted += dt
                         if speed:
                             budget -= dt
