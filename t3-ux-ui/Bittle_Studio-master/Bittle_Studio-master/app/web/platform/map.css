@@ -1,0 +1,146 @@
+/* Map editor styles. Everything is scoped under .map-editor; theme comes from the page's custom properties. */
+.map-editor {
+  --me-bg: var(--bg, #0f1720);
+  --me-panel: var(--panel, #16212c);
+  --me-line: var(--line, #2a3a4a);
+  --me-text: var(--text, #e6edf3);
+  --me-muted: var(--muted, #8b9bab);
+  --me-accent: var(--accent, #2f81f7);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  box-sizing: border-box;
+  color: var(--me-text);
+  font: 13px/1.35 system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+.map-editor *, .map-editor *::before, .map-editor *::after { box-sizing: border-box; }
+.map-editor [hidden] { display: none !important; }
+
+.map-editor .me-bar, .map-editor .me-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+  flex: 0 0 auto;
+}
+.map-editor .me-select {
+  flex: 1 1 140px;
+  min-width: 110px;
+  max-width: 260px;
+}
+.map-editor .me-spacer { flex: 1 1 auto; }
+
+.map-editor button, .map-editor select, .map-editor input, .map-editor textarea {
+  font: inherit;
+  color: var(--me-text);
+  background: var(--me-panel);
+  border: 1px solid var(--me-line);
+  border-radius: 6px;
+  padding: 4px 8px;
+  min-height: 30px;
+}
+.map-editor button { cursor: pointer; position: relative; white-space: nowrap; }
+.map-editor button:hover:not(:disabled) { border-color: var(--me-accent); }
+.map-editor button:disabled, .map-editor fieldset:disabled input, .map-editor fieldset:disabled textarea { opacity: .55; cursor: default; }
+.map-editor button:focus-visible, .map-editor select:focus-visible, .map-editor input:focus-visible,
+.map-editor textarea:focus-visible, .map-editor .me-canvas:focus-visible {
+  outline: 2px solid var(--me-accent);
+  outline-offset: 1px;
+}
+.map-editor button[aria-pressed="true"] {
+  background: var(--me-accent);
+  border-color: var(--me-accent);
+  color: #fff;
+}
+.map-editor .me-primary { border-color: var(--me-accent); }
+.map-editor .me-danger:hover:not(:disabled) { border-color: #f85149; color: #ff7b72; }
+.map-editor .me-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-left: 6px;
+  border-radius: 50%;
+  background: #f0883e;
+  vertical-align: middle;
+}
+.map-editor .me-ico { display: inline-block; min-width: 1.1em; margin-right: 4px; text-align: center; }
+.map-editor .me-tools button { padding: 3px 7px; }
+
+.map-editor .me-hint {
+  flex: 0 0 auto;
+  min-height: 1.35em;
+  color: var(--me-muted);
+  font-size: 12px;
+}
+
+.map-editor .me-stage {
+  position: relative;
+  flex: 1 1 280px;
+  min-height: 220px;
+  overflow: hidden;
+  border: 1px solid var(--me-line);
+  border-radius: 8px;
+  background: #0b1118;
+}
+.map-editor .me-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  touch-action: none;
+  outline-offset: -2px;
+  user-select: none;
+}
+.map-editor .me-coords {
+  position: absolute;
+  right: 8px;
+  bottom: 6px;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: rgba(15, 23, 32, .75);
+  color: var(--me-muted);
+  font-size: 11px;
+  pointer-events: none;
+}
+.map-editor .me-fit { position: absolute; top: 6px; right: 6px; min-height: 26px; padding: 2px 8px; font-size: 12px; opacity: .92; }
+
+.map-editor .me-side {
+  flex: 0 1 auto;
+  max-height: 38%;
+  min-height: 70px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.map-editor .me-side details {
+  border: 1px solid var(--me-line);
+  border-radius: 8px;
+  background: var(--me-panel);
+}
+.map-editor .me-side summary { padding: 5px 10px; cursor: pointer; font-weight: 600; }
+.map-editor fieldset { border: 0; margin: 0; padding: 4px 10px 10px; min-width: 0; }
+.map-editor .me-legend { padding: 0; font-weight: 600; color: var(--me-text); }
+.map-editor .me-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(112px, 1fr));
+  gap: 6px 8px;
+  margin-bottom: 6px;
+}
+.map-editor .me-field { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.map-editor .me-field > span { color: var(--me-muted); font-size: 11px; }
+.map-editor .me-field input, .map-editor .me-field textarea { width: 100%; background: var(--me-bg); }
+.map-editor .me-wide { grid-column: 1 / -1; }
+.map-editor textarea { resize: vertical; min-height: 54px; }
+.map-editor .me-check { flex-direction: row; align-items: center; gap: 6px; }
+.map-editor .me-check input { width: auto; min-height: 0; }
+.map-editor .me-check > span { color: var(--me-text); font-size: 13px; }
+.map-editor .me-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-top: 4px; }
+.map-editor .me-empty, .map-editor .me-info { margin: 4px 0; color: var(--me-muted); font-size: 12px; }
+.map-editor input[type="range"] { padding: 0; min-height: 24px; accent-color: var(--me-accent); background: transparent; border: 0; }
+
+.map-editor.me-readonly .me-tools { display: none; }

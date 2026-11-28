@@ -1,0 +1,9 @@
+{
+  "additionalFiles": "",
+  "compiler.optimization_flags": "-Os",
+  "customBuildProperties": "",
+  "fqbn": "esp32:esp32:XIAO_ESP32S3:PSRAM=opi",
+  "hardwareFolders": "C:\\Users\\benpe\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.12,C:\\Users\\benpe\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.12",
+  "otherLibrariesFolders": "C:\\Users\\benpe\\Documents\\Arduino\\libraries",
+  "sketchLocation": "C:\\Users\\benpe\\Desktop\\Bittle_Studio-master\\firmware\\bittle-camera"
+}

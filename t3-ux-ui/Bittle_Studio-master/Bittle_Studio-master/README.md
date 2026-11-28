@@ -21,11 +21,12 @@ Design, simulate and send motions to a Petoi Bittle robot dog, all on your own c
 | | Windows (`launchers/windows`) | Mac (`launchers/mac`) | Linux (`launchers/linux`) |
 |---|---|---|---|
 | **Install once** | double-click **Setup** | double-click **Setup** | run `./setup.sh` |
+| **Start the Bittle Platform** (map, camera, 3D robot and control in one simple page) | double-click **Start Bittle Platform** | double-click **Start Bittle Platform** | run `./start-platform.sh` |
 | **Start the full Studio** | double-click **Start Bittle Studio** | double-click **Start Bittle Studio** | run `./start-studio.sh` |
 | **Start only the robot console** | double-click **Start Bittle Link** | double-click **Start Bittle Link** | run `./start-bittle-link.sh` |
 | **Start the Coop simulator** | double-click **Start Coop Simulator** | double-click **Start Coop Simulator** | run `./start-coop.sh` |
 
-The Studio opens in your browser at http://127.0.0.1:8765, the robot console at http://127.0.0.1:8770 and the Coop simulator (Bittle guarding a chicken coop at night: terrain, mud, leg designs, sensors, a fox to detect and chase off, docking, battery, metrics, batch experiments and a hub for outside modules, see [docs/coop-simulation.md](docs/coop-simulation.md)) at http://127.0.0.1:8780. Keep the black terminal window open while you work, and press **Ctrl+C** in it to stop.
+The Bittle Platform opens at http://127.0.0.1:8790 (in Dutch; see [docs/bittle-platform.md](docs/bittle-platform.md)). The Studio opens in your browser at http://127.0.0.1:8765, the robot console at http://127.0.0.1:8770 and the Coop simulator (Bittle guarding a chicken coop at night: terrain, mud, leg designs, sensors, a fox to detect and chase off, docking, battery, metrics, batch experiments and a hub for outside modules, see [docs/coop-simulation.md](docs/coop-simulation.md)) at http://127.0.0.1:8780. Keep the black terminal window open while you work, and press **Ctrl+C** in it to stop.
 
 Use **Chrome or Edge**, because Bluetooth from a web page only works there.
 
